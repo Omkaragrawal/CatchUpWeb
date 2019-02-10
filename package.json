@@ -1,0 +1,19 @@
+{
+  "name": "catchupweb",
+  "version": "1.0.0",
+  "description": "A web version of catchup",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Omkaragrawal/catchupweb.git"
+  },
+  "author": "OMKAR AGRAWAL",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Omkaragrawal/catchupweb/issues"
+  },
+  "homepage": "https://github.com/Omkaragrawal/catchupweb#readme"
+}
