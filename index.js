@@ -18,6 +18,15 @@ function loadData(channel) {
                     console.log(err)
                 })
             break;
+        case 'hackerearth':
+            axios.get('/hackerearth', { responseType: 'document' })
+                .then(response => {
+                    console.log(response.data);
+                })
+                .catch(err => {
+                    console.log(err)
+                })
+            break;
         default:
             console.log("default:  " + channel)
     }
