@@ -36,7 +36,7 @@ function toHnTable(data) {
     console.log("\n\n" + typeof (data) + data + "\n\n")
     for (let i = 0; i < data.length; i++) {
         console.log(data[i] + "\n")
-        contentHn.innerHTML += '<tr><td><p>' + data[i].content_html.replace(' URL', "").replace(/">.*\s<.*\s.*\s.*/g, `" target="_blank"> ${data[i].title}`) + '</a></div><div>Author: ' + data[i].author + '&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspPublished on: ' + data[i].date_published + '</div></p></td></tr>';
+        contentHn.innerHTML += '<tr><td colspan="2"><p>' + data[i].content_html.replace(' URL', "").replace(/">.*\s<.*\s.*\s.*/g, `" target="_blank"> ${data[i].title}`) + '</a></div><div>Author: ' + data[i].author + '&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspPublished on: ' + data[i].date_published + '</div></p></tdcolspan></tr>';
     }
 }
 

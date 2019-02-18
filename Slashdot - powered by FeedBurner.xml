@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" media="screen" href="/~d/styles/atom10full.xsl"?><?xml-stylesheet type="text/css" media="screen" href="http://rss.slashdot.org/~d/styles/itemcontent.css"?><feed xmlns="http://www.w3.org/2005/Atom" xmlns:slash="http://purl.org/rss/1.0/modules/slash/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:syn="http://purl.org/rss/1.0/modules/syndication/" xml:lang="en-us">
+
+<title>Slashdot</title>
+<id>https://slashdot.org/</id>
+<link href="https://slashdot.org/" />
+
+
+<subtitle>News for nerds, stuff that matters</subtitle>
+<rights>Copyright 1997-2016, SlashdotMedia. All Rights Reserved.</rights>
+<updated>2019-02-18T13:24:08+00:00</updated>
+<author>
+ <name>Dice</name>
+ <email>help@slashdot.org</email>
+</author>
+<category term="Technology" />
+<syn:updatePeriod>hourly</syn:updatePeriod>
+<syn:updateFrequency>1</syn:updateFrequency>
+<syn:updateBase>1970-01-01T00:00+00:00</syn:updateBase>
+<logo>https://a.fsdn.com/sd/topics/topicslashdot.gif</logo>
+
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/atom+xml" href="http://rss.slashdot.org/slashdot/slashdotMainatom" /><feedburner:info xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" uri="slashdot/slashdotmainatom" /><atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" /><entry>
+<id>https://news.slashdot.org/story/19/02/18/100232/goldman-sachs-asks-is-curing-patients-a-sustainable-business-model?utm_source=atom1.0mainlinkanon&amp;utm_medium=feed</id>
+<title>Goldman Sachs Asks: 'Is Curing Patients a Sustainable Business Model?'</title>
+<link href="https://news.slashdot.org/story/19/02/18/100232/goldman-sachs-asks-is-curing-patients-a-sustainable-business-model?utm_source=atom1.0mainlinkanon&amp;utm_medium=feed" />
+<summary type="html">Goldman Sachs analysts attempted to address a touchy subject for biotech companies, especially those involved in the pioneering "gene therapy" treatment: cures could be bad for business in the long run. "Is curing patients a sustainable business model?" analysts ask in an April 10 report entitled "The Genome Revolution." From a report: "The potential to deliver 'one shot cures' is one of the most attractive aspects of gene therapy, genetically-engineered cell therapy and gene editing. However, such treatments offer a very different outlook with regard to recurring revenue versus chronic therapies," analyst Salveen Richter wrote in the note to clients Tuesday. "While this proposition carries tremendous value for patients and society, it could represent a challenge for genome medicine developers looking for sustained cash flow." 
+
+Richter cited Gilead Sciences' treatments for hepatitis C, which achieved cure rates of more than 90 percent. The company's U.S. sales for these hepatitis C treatments peaked at $12.5 billion in 2015, but have been falling ever since. Goldman estimates the U.S. sales for these treatments will be less than $4 billion this year, according to a table in the report. "GILD is a case in point, where the success of its hepatitis C franchise has gradually exhausted the available pool of treatable patients," the analyst wrote.&lt;p&gt;&lt;div class="share_submission" style="position:relative;"&gt;
+&lt;a class="slashpop" href="http://twitter.com/home?status=Goldman+Sachs+Asks%3A+'Is+Curing+Patients+a+Sustainable+Business+Model%3F'%3A+http%3A%2F%2Fbit.ly%2F2NjdwgF"&gt;&lt;img src="https://a.fsdn.com/sd/twitter_icon_large.png"&gt;&lt;/a&gt;
+&lt;a class="slashpop" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fnews.slashdot.org%2Fstory%2F19%2F02%2F18%2F100232%2Fgoldman-sachs-asks-is-curing-patients-a-sustainable-business-model%3Futm_source%3Dslashdot%26utm_medium%3Dfacebook"&gt;&lt;img src="https://a.fsdn.com/sd/facebook_icon_large.png"&gt;&lt;/a&gt;
+
+&lt;a class="nobg" href="http://plus.google.com/share?url=https://news.slashdot.org/story/19/02/18/100232/goldman-sachs-asks-is-curing-patients-a-sustainable-business-model?utm_source=slashdot&amp;amp;utm_medium=googleplus" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"&gt;&lt;img src="https://www.gstatic.com/images/icons/gplus-16.png" alt="Share on Google+"/&gt;&lt;/a&gt;
+
+
+
+&lt;/div&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://news.slashdot.org/story/19/02/18/100232/goldman-sachs-asks-is-curing-patients-a-sustainable-business-model?utm_source=atom1.0moreanon&amp;amp;utm_medium=feed"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;</summary>
+<updated>2019-02-18T11:30:00+00:00</updated>
+<author>
+ <name>msmash</name>
+</author>
+<category term="money" />
+<slash:department>wow</slash:department>
+<slash:section>news</slash:section>
+<slash:comments>67</slash:comments>
+<slash:hit_parade>67,66,34,28,6,3,1</slash:hit_parade>
+</entry>
+
+<entry>
+<id>https://news.slashdot.org/story/19/02/18/0925222/youtube-to-blame-for-rise-in-flat-earth-believers-says-study?utm_source=atom1.0mainlinkanon&amp;utm_medium=feed</id>
+<title>YouTube To Blame For Rise in Flat Earth Believers, Says Study</title>
+<link href="https://news.slashdot.org/story/19/02/18/0925222/youtube-to-blame-for-rise-in-flat-earth-believers-says-study?utm_source=atom1.0mainlinkanon&amp;utm_medium=feed" />
+<summary type="html">According to research, almost everyone who believes in flat Earth theory got started on YouTube. From a report: Asheley Landrum is an assistant professor of science communication at Texas Tech University. Her focus: how cultural values affect our understanding of science. Most recently she's been looking at the rise of flat Earth theory. Incredibly, more people than ever believe in a flat Earth. Google searches for "flat earth" have grown massively over the past five years and flat Earth conventions have begun popping up all over the globe. That's where Landrum focused her research. Landrum interviewed 30 people who attended one flat Earth convention and found that all but one became flat Earthers after watching videos on YouTube. 
+
+She presented her research at an event run by the American Association for the Advancement of Science. While Landrum didn't explicitly blame YouTube for the rise in flat Earth believers, she does believe that Google could be doing more to stop the spread of scientifically incorrect ideas. "There's a lot of helpful information on YouTube but also a lot of misinformation," she said, as reported by The Guardian. "Their algorithms make it easy to end up going down the rabbit hole, by presenting information to people who are going to be more susceptible to it."&lt;p&gt;&lt;div class="share_submission" style="position:relative;"&gt;
+&lt;a class="slashpop" href="http://twitter.com/home?status=YouTube+To+Blame+For+Rise+in+Flat+Earth+Believers%2C+Says+Study%3A+http%3A%2F%2Fbit.ly%2F2NjbYDn"&gt;&lt;img src="https://a.fsdn.com/sd/twitter_icon_large.png"&gt;&lt;/a&gt;
+&lt;a class="slashpop" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fnews.slashdot.org%2Fstory%2F19%2F02%2F18%2F0925222%2Fyoutube-to-blame-for-rise-in-flat-earth-believers-says-study%3Futm_source%3Dslashdot%26utm_medium%3Dfacebook"&gt;&lt;img src="https://a.fsdn.com/sd/facebook_icon_large.png"&gt;&lt;/a&gt;
+
+&lt;a class="nobg" href="http://plus.google.com/share?url=https://news.slashdot.org/story/19/02/18/0925222/youtube-to-blame-for-rise-in-flat-earth-believers-says-study?utm_source=slashdot&amp;amp;utm_medium=googleplus" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"&gt;&lt;img src="https://www.gstatic.com/images/icons/gplus-16.png" alt="Share on Google+"/&gt;&lt;/a&gt;
+
+
+
+&lt;/div&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://news.slashdot.org/story/19/02/18/0925222/youtube-to-blame-for-rise-in-flat-earth-believers-says-study?utm_source=atom1.0moreanon&amp;amp;utm_medium=feed"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;</summary>
+<updated>2019-02-18T09:30:00+00:00</updated>
+<author>
+ <name>msmash</name>
+</author>
+<category term="youtube" />
+<slash:department>closer-look</slash:department>
+<slash:section>news</slash:section>
+<slash:comments>91</slash:comments>
+<slash:hit_parade>91,86,53,45,16,5,3</slash:hit_parade>
+</entry>
+
+<entry>
+<id>https://news.slashdot.org/story/19/02/17/1556219/india-the-worlds-second-largest-internet-market-is-turning-its-back-on-silicon-valley?utm_source=atom1.0mainlinkanon&amp;utm_medium=feed</id>
+<title>India, the World's Second Largest Internet Market, Is Turning Its Back on Silicon Valley</title>
+<link href="https://news.slashdot.org/story/19/02/17/1556219/india-the-worlds-second-largest-internet-market-is-turning-its-back-on-silicon-valley?utm_source=atom1.0mainlinkanon&amp;utm_medium=feed" />
+<summary type="html">An anonymous reader shares a report: For years, India has wanted foreign companies to thrive in the country. When the Bharatiya Janata Party (BJP) took power in 2014, one of its early major pushes was to formulate plans and structure incentives to attract foreign investment. In 2015, Prime Minister Narendra Modi unveiled plans to liberalize the foreign investment rules. He also visited the U.S. and met with top Silicon Valley executives, nearly all of whom subsequently expanded their commitments in India. It further introduced lofty incentives to encourage companies to participate in Make in India and Digital India, a set of state-run initiatives to drive job growth in the nation. 
+
+[...] But over the past year, in the run-up to the general elections in May, the Indian government has unveiled -- and in many cases, enforced -- a wave of sweeping changes. It now dictates how foreign companies handle and make use of Indian user data and other aspects of how ecommerce platforms operate, and it is working on introducing greater oversight for technology platforms. [...] Lobby groups that represent U.S. companies and industry watchers say they see an extreme shift from the "warm, welcoming, collaborative" approach the government exhibited in 2014. "In the past year or so, the engagement has been combative, with abrupt, disruptive policy changes that are being held without consultation, and, unusually, with absolutely no room for negotiation or even deadline extensions -- as we saw with data localisation and FDI in ecommerce," Prasanto K Roy, a technology and policy analyst, told VentureBeat. The story also looks at how much revenue Silicon Valley companies that count India as one of their biggest markets is generating there. Spoiler alert: it's very little.&lt;p&gt;&lt;div class="share_submission" style="position:relative;"&gt;
+&lt;a class="slashpop" href="http://twitter.com/home?status=India%2C+the+World's+Second+Largest+Internet+Market%2C+Is+Turning+Its+Back+on+Silicon+Valley%3A+http%3A%2F%2Fbit.ly%2F2SYklJF"&gt;&lt;img src="https://a.fsdn.com/sd/twitter_icon_large.png"&gt;&lt;/a&gt;
+&lt;a class="slashpop" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fnews.slashdot.org%2Fstory%2F19%2F02%2F17%2F1556219%2Findia-the-worlds-second-largest-internet-market-is-turning-its-back-on-silicon-valley%3Futm_source%3Dslashdot%26utm_medium%3Dfacebook"&gt;&lt;img src="https://a.fsdn.com/sd/facebook_icon_large.png"&gt;&lt;/a&gt;
+
+&lt;a class="nobg" href="http://plus.google.com/share?url=https://news.slashdot.org/story/19/02/17/1556219/india-the-worlds-second-largest-internet-market-is-turning-its-back-on-silicon-valley?utm_source=slashdot&amp;amp;utm_medium=googleplus" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"&gt;&lt;img src="https://www.gstatic.com/images/icons/gplus-16.png" alt="Share on Google+"/&gt;&lt;/a&gt;
+
+
+
+&lt;/div&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://news.slashdot.org/story/19/02/17/1556219/india-the-worlds-second-largest-internet-market-is-turning-its-back-on-silicon-valley?utm_source=atom1.0moreanon&amp;amp;utm_medium=feed"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;</summary>
+<updated>2019-02-18T06:30:00+00:00</updated>
+<author>
+ <name>msmash</name>
+</author>
+<category term="business" />
+<slash:department>closer-look</slash:department>
+<slash:section>news</slash:section>
+<slash:comments>124</slash:comments>
+<slash:hit_parade>124,119,59,50,18,7,6</slash:hit_parade>
+</entry>
+
+<entry>
+<id>https://it.slashdot.org/story/19/02/17/2211208/no-you-cant-ignore-email-its-rude?utm_source=atom1.0mainlinkanon&amp;utm_medium=feed</id>
+<title>'No, You Can't Ignore Email. It's Rude.'</title>
+<link href="https://it.slashdot.org/story/19/02/17/2211208/no-you-cant-ignore-email-its-rude?utm_source=atom1.0mainlinkanon&amp;utm_medium=feed" />
+<summary type="html">Yes, we're all overwhelmed with email. One recent survey suggested that the average American's inbox has 199 unread messages. But volume isn't an excuse for not replying. Ignoring email is an act of incivility, reads an opinion piece. From the story: "I'm too busy to answer your email" really means "Your email is not a priority for me right now." That's a popular justification for neglecting your inbox: It's full of other people's priorities. But there's a growing body of evidence that if you care about being good at your job, your inbox should be a priority. When researchers compiled a huge database of the digital habits of teams at Microsoft, they found that the clearest warning sign of an ineffective manager was being slow to answer emails. Responding in a timely manner shows that you are conscientious -- organized, dependable and hardworking. And that matters. In a comprehensive analysis of people in hundreds of occupations, conscientiousness was the single best personality predictor of job performance. (It turns out that people who are rude online tend to be rude offline, too.) 
+
+I'm not saying you have to answer every email. Your brain is not just sitting there waiting to be picked. If senders aren't considerate enough to do their homework and ask a question you're qualified to answer, you don't owe them anything back. How do you know if an email you've received -- or even more important, one you're considering writing -- doesn't deserve a response? After all, sending an inappropriate email can be as rude as ignoring a polite one. [...] Whatever boundaries you choose, don't abandon your inbox altogether. Not answering emails today is like refusing to take phone calls in the 1990s or ignoring letters in the 1950s. Email is not household clutter and you're not Marie Kondo. Ping!&lt;p&gt;&lt;div class="share_submission" style="position:relative;"&gt;
+&lt;a class="slashpop" href="http://twitter.com/home?status='No%2C+You+Can't+Ignore+Email.+It's+Rude.'%3A+http%3A%2F%2Fbit.ly%2F2NfIyWI"&gt;&lt;img src="https://a.fsdn.com/sd/twitter_icon_large.png"&gt;&lt;/a&gt;
+&lt;a class="slashpop" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fit.slashdot.org%2Fstory%2F19%2F02%2F17%2F2211208%2Fno-you-cant-ignore-email-its-rude%3Futm_source%3Dslashdot%26utm_medium%3Dfacebook"&gt;&lt;img src="https://a.fsdn.com/sd/facebook_icon_large.png"&gt;&lt;/a&gt;
+
+&lt;a class="nobg" href="http://plus.google.com/share?url=https://it.slashdot.org/story/19/02/17/2211208/no-you-cant-ignore-email-its-rude?utm_source=slashdot&amp;amp;utm_medium=googleplus" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"&gt;&lt;img src="https://www.gstatic.com/images/icons/gplus-16.png" alt="Share on Google+"/&gt;&lt;/a&gt;
+
+
+
+&lt;/div&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://it.slashdot.org/story/19/02/17/2211208/no-you-cant-ignore-email-its-rude?utm_source=atom1.0moreanon&amp;amp;utm_medium=feed"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;</summary>
+<updated>2019-02-18T03:30:00+00:00</updated>
+<author>
+ <name>msmash</name>
+</author>
+<category term="it" />
+<slash:department>email-etiquette</slash:department>
+<slash:section>it</slash:section>
+<slash:comments>136</slash:comments>
+<slash:hit_parade>136,132,66,54,17,8,3</slash:hit_parade>
+</entry>
+
+<entry>
+<id>https://yro.slashdot.org/story/19/02/18/0056221/digital-gangster-facebook-intentionally-and-knowingly-violated-uk-privacy-and-competition-rules-british-lawmakers-say?utm_source=atom1.0mainlinkanon&amp;utm_medium=feed</id>
+<title>'Digital Gangster' Facebook Intentionally and Knowingly Violated UK Privacy and Competition Rules, British Lawmakers Say</title>
+<link href="https://yro.slashdot.org/story/19/02/18/0056221/digital-gangster-facebook-intentionally-and-knowingly-violated-uk-privacy-and-competition-rules-british-lawmakers-say?utm_source=atom1.0mainlinkanon&amp;utm_medium=feed" />
+<summary type="html">British lawmakers on Sunday accused Facebook of having "intentionally and knowingly violated both data privacy and anti-competition laws" in the country, and they called for investigations into the social media giant's business practices. From a report: The sharp rebuke came in a 108-page report written by members of Parliament, who in 2017 began a wide-ranging study of Facebook and the spread of malicious content online. They concluded that the United Kingdom should adopt new regulations so lawmakers can hold Facebook and its tech peers in Silicon Valley accountable for digital misdeeds. "Companies like Facebook should not be allowed to behave like 'digital gangsters' in the online world," U.K. lawmakers said in their report, "considering themselves to be ahead of and beyond the law."&lt;p&gt;&lt;div class="share_submission" style="position:relative;"&gt;
+&lt;a class="slashpop" href="http://twitter.com/home?status='Digital+Gangster'+Facebook+Intentionally+and+Knowingly+Violated+UK+Privacy+and+Competition+Rules%2C+British+Lawmakers+Say%3A+http%3A%2F%2Fbit.ly%2F2T124Ly"&gt;&lt;img src="https://a.fsdn.com/sd/twitter_icon_large.png"&gt;&lt;/a&gt;
+&lt;a class="slashpop" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fyro.slashdot.org%2Fstory%2F19%2F02%2F18%2F0056221%2Fdigital-gangster-facebook-intentionally-and-knowingly-violated-uk-privacy-and-competition-rules-british-lawmakers-say%3Futm_source%3Dslashdot%26utm_medium%3Dfacebook"&gt;&lt;img src="https://a.fsdn.com/sd/facebook_icon_large.png"&gt;&lt;/a&gt;
+
+&lt;a class="nobg" href="http://plus.google.com/share?url=https://yro.slashdot.org/story/19/02/18/0056221/digital-gangster-facebook-intentionally-and-knowingly-violated-uk-privacy-and-competition-rules-british-lawmakers-say?utm_source=slashdot&amp;amp;utm_medium=googleplus" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"&gt;&lt;img src="https://www.gstatic.com/images/icons/gplus-16.png" alt="Share on Google+"/&gt;&lt;/a&gt;
+
+
+
+&lt;/div&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://yro.slashdot.org/story/19/02/18/0056221/digital-gangster-facebook-intentionally-and-knowingly-violated-uk-privacy-and-competition-rules-british-lawmakers-say?utm_source=atom1.0moreanon&amp;amp;utm_medium=feed"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;</summary>
+<updated>2019-02-18T01:00:00+00:00</updated>
+<author>
+ <name>msmash</name>
+</author>
+<category term="facebook" />
+<slash:department>but-what-do-you-really-feel?</slash:department>
+<slash:section>yro</slash:section>
+<slash:comments>56</slash:comments>
+<slash:hit_parade>56,56,22,19,9,2,1</slash:hit_parade>
+</entry>
+
+<entry>
+<id>https://yro.slashdot.org/story/19/02/18/0017246/researcher-scans-all-ip-addresses-of-austria-finds-a-ton-of-things-that-shouldnt-be-online?utm_source=atom1.0mainlinkanon&amp;utm_medium=feed</id>
+<title>Researcher Scans All IP Addresses of Austria, Finds a Ton of Things That Shouldn't Be Online</title>
+<link href="https://yro.slashdot.org/story/19/02/18/0017246/researcher-scans-all-ip-addresses-of-austria-finds-a-ton-of-things-that-shouldnt-be-online?utm_source=atom1.0mainlinkanon&amp;utm_medium=feed" />
+<summary type="html">Christian Haschek scanned the entire Austrian IP space and found IP cameras, printers, and industrial control systems and a range of other devices that should not be online.&lt;p&gt;&lt;div class="share_submission" style="position:relative;"&gt;
+&lt;a class="slashpop" href="http://twitter.com/home?status=Researcher+Scans+All+IP+Addresses+of+Austria%2C+Finds+a+Ton+of+Things+That+Shouldn't+Be+Online%3A+http%3A%2F%2Fbit.ly%2F2NbVDQx"&gt;&lt;img src="https://a.fsdn.com/sd/twitter_icon_large.png"&gt;&lt;/a&gt;
+&lt;a class="slashpop" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fyro.slashdot.org%2Fstory%2F19%2F02%2F18%2F0017246%2Fresearcher-scans-all-ip-addresses-of-austria-finds-a-ton-of-things-that-shouldnt-be-online%3Futm_source%3Dslashdot%26utm_medium%3Dfacebook"&gt;&lt;img src="https://a.fsdn.com/sd/facebook_icon_large.png"&gt;&lt;/a&gt;
+
+&lt;a class="nobg" href="http://plus.google.com/share?url=https://yro.slashdot.org/story/19/02/18/0017246/researcher-scans-all-ip-addresses-of-austria-finds-a-ton-of-things-that-shouldnt-be-online?utm_source=slashdot&amp;amp;utm_medium=googleplus" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"&gt;&lt;img src="https://www.gstatic.com/images/icons/gplus-16.png" alt="Share on Google+"/&gt;&lt;/a&gt;
+
+
+
+&lt;/div&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://yro.slashdot.org/story/19/02/18/0017246/researcher-scans-all-ip-addresses-of-austria-finds-a-ton-of-things-that-shouldnt-be-online?utm_source=atom1.0moreanon&amp;amp;utm_medium=feed"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;</summary>
+<updated>2019-02-18T00:18:00+00:00</updated>
+<author>
+ <name>msmash</name>
+</author>
+<category term="privacy" />
+<slash:department>how-about-that</slash:department>
+<slash:section>yro</slash:section>
+<slash:comments>75</slash:comments>
+<slash:hit_parade>75,75,43,39,4,3,1</slash:hit_parade>
+</entry>
+
+<entry>
+<id>https://yro.slashdot.org/story/19/02/17/2148225/google-fixing-chrome-api-to-prevent-incognito-mode-detection?utm_source=atom1.0mainlinkanon&amp;utm_medium=feed</id>
+<title>Google Fixing Chrome API To Prevent Incognito Mode Detection</title>
+<link href="https://yro.slashdot.org/story/19/02/17/2148225/google-fixing-chrome-api-to-prevent-incognito-mode-detection?utm_source=atom1.0mainlinkanon&amp;utm_medium=feed" />
+<summary type="html">AmiMoJo writes: When browsing the web with Google Chrome, some sites are using a method to determine if a visitor is in a regular browsing session or in incognito mode. As this can be considered a breach of privacy, Google will be changing how a particular API works so that web sites can no longer utilize this technique. 
+
+Chrome supports the FileSystem API, which allows sites to create a virtual file system that lives within the sandbox of the browser. This allows sites that utilize large assets, such as online games, to download these assets to a virtual file system so that they do not have to download them each time they are needed. Currently the FileSystem API is not available in incognito sessions, because it leaves files behind and could be considered a privacy risk. Currently the API doesn't work in incognito mode, offering sites a way to check for it. In a Chrome Gerrit post started this week and updated earlier this morning, Google has stated that they are changing the FileSystem API so that it can be used in incognito mode, without the risks to privacy.&lt;p&gt;&lt;div class="share_submission" style="position:relative;"&gt;
+&lt;a class="slashpop" href="http://twitter.com/home?status=Google+Fixing+Chrome+API+To+Prevent+Incognito+Mode+Detection%3A+http%3A%2F%2Fbit.ly%2F2N9CZJ4"&gt;&lt;img src="https://a.fsdn.com/sd/twitter_icon_large.png"&gt;&lt;/a&gt;
+&lt;a class="slashpop" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fyro.slashdot.org%2Fstory%2F19%2F02%2F17%2F2148225%2Fgoogle-fixing-chrome-api-to-prevent-incognito-mode-detection%3Futm_source%3Dslashdot%26utm_medium%3Dfacebook"&gt;&lt;img src="https://a.fsdn.com/sd/facebook_icon_large.png"&gt;&lt;/a&gt;
+
+&lt;a class="nobg" href="http://plus.google.com/share?url=https://yro.slashdot.org/story/19/02/17/2148225/google-fixing-chrome-api-to-prevent-incognito-mode-detection?utm_source=slashdot&amp;amp;utm_medium=googleplus" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"&gt;&lt;img src="https://www.gstatic.com/images/icons/gplus-16.png" alt="Share on Google+"/&gt;&lt;/a&gt;
+
+
+
+&lt;/div&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://yro.slashdot.org/story/19/02/17/2148225/google-fixing-chrome-api-to-prevent-incognito-mode-detection?utm_source=atom1.0moreanon&amp;amp;utm_medium=feed"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;</summary>
+<updated>2019-02-17T23:09:00+00:00</updated>
+<author>
+ <name>msmash</name>
+</author>
+<category term="chrome" />
+<slash:department>patch-incoming</slash:department>
+<slash:section>yro</slash:section>
+<slash:comments>29</slash:comments>
+<slash:hit_parade>29,28,12,11,3,1,1</slash:hit_parade>
+</entry>
+
+<entry>
+<id>https://mobile.slashdot.org/story/19/02/17/2021233/house-bill-requires-pornography-filter-on-all-phones-computers-purchased-in-kansas?utm_source=atom1.0mainlinkanon&amp;utm_medium=feed</id>
+<title>House Bill Requires Pornography Filter on All Phones, Computers Purchased in Kansas</title>
+<link href="https://mobile.slashdot.org/story/19/02/17/2021233/house-bill-requires-pornography-filter-on-all-phones-computers-purchased-in-kansas?utm_source=atom1.0mainlinkanon&amp;utm_medium=feed" />
+<summary type="html">Two bills introduced in the Kansas House on Wednesday generate funding for human trafficking programs by requiring all new internet-capable telephones or computers sold in the state to feature anti-pornography software and by mandating adult entertainment businesses charge a special admissions tax. From a report: Sabetha Rep. Randy Garber sponsored legislation requiring the software installations and dictating purchasers would have to pay a $20 fee to the state, and whatever cost was assessed by retail stores, to remove filters for "obscene" material. No one under 18 would be allowed to have filter software deleted. "It's to protect children," Garber, a Republican, said in an interview. "What it would do is any X-rated pornography stuff would be filtered. It would be on all purchases going forward. Why wouldn't anybody like this?" He said it wouldn't be surprising if the bill, if adopted as law, generated legal challenges.&lt;p&gt;&lt;div class="share_submission" style="position:relative;"&gt;
+&lt;a class="slashpop" href="http://twitter.com/home?status=House+Bill+Requires+Pornography+Filter+on+All+Phones%2C+Computers+Purchased+in+Kansas%3A+http%3A%2F%2Fbit.ly%2F2NcPyU3"&gt;&lt;img src="https://a.fsdn.com/sd/twitter_icon_large.png"&gt;&lt;/a&gt;
+&lt;a class="slashpop" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fmobile.slashdot.org%2Fstory%2F19%2F02%2F17%2F2021233%2Fhouse-bill-requires-pornography-filter-on-all-phones-computers-purchased-in-kansas%3Futm_source%3Dslashdot%26utm_medium%3Dfacebook"&gt;&lt;img src="https://a.fsdn.com/sd/facebook_icon_large.png"&gt;&lt;/a&gt;
+
+&lt;a class="nobg" href="http://plus.google.com/share?url=https://mobile.slashdot.org/story/19/02/17/2021233/house-bill-requires-pornography-filter-on-all-phones-computers-purchased-in-kansas?utm_source=slashdot&amp;amp;utm_medium=googleplus" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"&gt;&lt;img src="https://www.gstatic.com/images/icons/gplus-16.png" alt="Share on Google+"/&gt;&lt;/a&gt;
+
+
+
+&lt;/div&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://mobile.slashdot.org/story/19/02/17/2021233/house-bill-requires-pornography-filter-on-all-phones-computers-purchased-in-kansas?utm_source=atom1.0moreanon&amp;amp;utm_medium=feed"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;</summary>
+<updated>2019-02-17T22:12:00+00:00</updated>
+<author>
+ <name>msmash</name>
+</author>
+<category term="technology" />
+<slash:department>how-about-that</slash:department>
+<slash:section>mobile</slash:section>
+<slash:comments>206</slash:comments>
+<slash:hit_parade>206,202,115,94,15,9,6</slash:hit_parade>
+</entry>
+
+<entry>
+<id>https://hardware.slashdot.org/story/19/02/17/2015217/razer-game-store-closing-feb-28-less-than-year-after-launch?utm_source=atom1.0mainlinkanon&amp;utm_medium=feed</id>
+<title>Razer Game Store Closing Feb 28, Less Than Year After Launch</title>
+<link href="https://hardware.slashdot.org/story/19/02/17/2015217/razer-game-store-closing-feb-28-less-than-year-after-launch?utm_source=atom1.0mainlinkanon&amp;utm_medium=feed" />
+<summary type="html">The Razer Game Store will close on February 28 at 1am PST, the company announced in a blog post. This comes less than a year after its launch last April. From a report: The shutdown is part of "the company's realignment plans," according to Razer. "It has been a privilege for us to recommend and deliver great digital game deals to you. We have been extremely fortunate to have you as part of our awesome community," the post reads. "Thank you for the support and making all this possible. We will be investing in other ways to deliver great content and introduce game promotions through Razer Gold, our virtual credits system."&lt;p&gt;&lt;div class="share_submission" style="position:relative;"&gt;
+&lt;a class="slashpop" href="http://twitter.com/home?status=Razer+Game+Store+Closing+Feb+28%2C+Less+Than+Year+After+Launch%3A+http%3A%2F%2Fbit.ly%2F2NbKfUX"&gt;&lt;img src="https://a.fsdn.com/sd/twitter_icon_large.png"&gt;&lt;/a&gt;
+&lt;a class="slashpop" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fhardware.slashdot.org%2Fstory%2F19%2F02%2F17%2F2015217%2Frazer-game-store-closing-feb-28-less-than-year-after-launch%3Futm_source%3Dslashdot%26utm_medium%3Dfacebook"&gt;&lt;img src="https://a.fsdn.com/sd/facebook_icon_large.png"&gt;&lt;/a&gt;
+
+&lt;a class="nobg" href="http://plus.google.com/share?url=https://hardware.slashdot.org/story/19/02/17/2015217/razer-game-store-closing-feb-28-less-than-year-after-launch?utm_source=slashdot&amp;amp;utm_medium=googleplus" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"&gt;&lt;img src="https://www.gstatic.com/images/icons/gplus-16.png" alt="Share on Google+"/&gt;&lt;/a&gt;
+
+
+
+&lt;/div&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://hardware.slashdot.org/story/19/02/17/2015217/razer-game-store-closing-feb-28-less-than-year-after-launch?utm_source=atom1.0moreanon&amp;amp;utm_medium=feed"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;</summary>
+<updated>2019-02-17T21:10:00+00:00</updated>
+<author>
+ <name>msmash</name>
+</author>
+<category term="business" />
+<slash:department>realignment-plans</slash:department>
+<slash:section>hardware</slash:section>
+<slash:comments>17</slash:comments>
+<slash:hit_parade>17,16,7,7,2,1,1</slash:hit_parade>
+</entry>
+
+<entry>
+<id>https://news.slashdot.org/story/19/02/17/209202/new-york-mayor-says-amazon-headquarters-debacle-was-an-abuse-of-corporate-power?utm_source=atom1.0mainlinkanon&amp;utm_medium=feed</id>
+<title>New York Mayor Says Amazon Headquarters Debacle Was 'an Abuse of Corporate Power'</title>
+<link href="https://news.slashdot.org/story/19/02/17/209202/new-york-mayor-says-amazon-headquarters-debacle-was-an-abuse-of-corporate-power?utm_source=atom1.0mainlinkanon&amp;utm_medium=feed" />
+<summary type="html">New York Mayor Bill de Blasio is still upset that Amazon isn't coming to New York. De Blasio attacked the company Sunday for canceling plans to build a second headquarters in Queens last week. From a report: "This is an example of an abuse of corporate power," de Blasio told NBC's Chuck Todd on "Meet the Press." "Amazon just took their ball and went home. And what they did was confirm people's worst fears about corporate America." He made similar comments in a New York Times op-ed Saturday. Amazon canceled the deal just months after announcing plans to split its new, second headquarters between New York and Virginia. The Seattle-based company, which is trying to grow its footprint at home and abroad, spent a year reviewing hundreds of "HQ2" proposals from all over North America before settling on the two regions. 
+
+[...] On Sunday, de Blasio, a Democrat, said New York offered Amazon a "fair deal," and blamed the company for making what he called an "arbitrary" decision to leave after some people objected. "They said they wanted a partnership, but the minute there were criticisms, they walked away," he added. "What does that say to working people that a company would leave them high and dry simply because some people raised criticisms?"&lt;p&gt;&lt;div class="share_submission" style="position:relative;"&gt;
+&lt;a class="slashpop" href="http://twitter.com/home?status=New+York+Mayor+Says+Amazon+Headquarters+Debacle+Was+'an+Abuse+of+Corporate+Power'%3A+http%3A%2F%2Fbit.ly%2F2N9XkxY"&gt;&lt;img src="https://a.fsdn.com/sd/twitter_icon_large.png"&gt;&lt;/a&gt;
+&lt;a class="slashpop" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fnews.slashdot.org%2Fstory%2F19%2F02%2F17%2F209202%2Fnew-york-mayor-says-amazon-headquarters-debacle-was-an-abuse-of-corporate-power%3Futm_source%3Dslashdot%26utm_medium%3Dfacebook"&gt;&lt;img src="https://a.fsdn.com/sd/facebook_icon_large.png"&gt;&lt;/a&gt;
+
+&lt;a class="nobg" href="http://plus.google.com/share?url=https://news.slashdot.org/story/19/02/17/209202/new-york-mayor-says-amazon-headquarters-debacle-was-an-abuse-of-corporate-power?utm_source=slashdot&amp;amp;utm_medium=googleplus" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"&gt;&lt;img src="https://www.gstatic.com/images/icons/gplus-16.png" alt="Share on Google+"/&gt;&lt;/a&gt;
+
+
+
+&lt;/div&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://news.slashdot.org/story/19/02/17/209202/new-york-mayor-says-amazon-headquarters-debacle-was-an-abuse-of-corporate-power?utm_source=atom1.0moreanon&amp;amp;utm_medium=feed"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;</summary>
+<updated>2019-02-17T20:11:00+00:00</updated>
+<author>
+ <name>msmash</name>
+</author>
+<category term="business" />
+<slash:department>tussle-continues</slash:department>
+<slash:section>news</slash:section>
+<slash:comments>278</slash:comments>
+<slash:hit_parade>278,267,139,124,29,13,6</slash:hit_parade>
+</entry>
+
+<entry>
+<id>https://yro.slashdot.org/story/19/02/17/1915237/how-tv-pirates-accidentally-pushed-a-25-year-old-indie-song-to-the-top-of-the-charts-in-japan?utm_source=atom1.0mainlinkanon&amp;utm_medium=feed</id>
+<title>How TV Pirates Accidentally Pushed a 25-Year-Old Indie Song to the Top of the Charts in Japan</title>
+<link href="https://yro.slashdot.org/story/19/02/17/1915237/how-tv-pirates-accidentally-pushed-a-25-year-old-indie-song-to-the-top-of-the-charts-in-japan?utm_source=atom1.0mainlinkanon&amp;utm_medium=feed" />
+<summary type="html">Last week, an alt-rock mystery puzzled the music press. Almost 25 years after its release, the Dinosaur Jr. song "Over Your Shoulder" appeared at number 18 on Japan's Hot 100 chart, beating out major new releases like Ariana Grande's "7 Rings." Here's what drove the popularity of the old song: More than 15 years ago, it was used on a Japanese reality show about boxing bad boys. Six years ago, Billboard started counting YouTube plays. And just days ago, YouTube apparently began recommending pirated episodes of that reality show to Japanese users, who seemingly binged it in the thousands, playing "Over Your Shoulder" over and over again in the process.&lt;p&gt;&lt;div class="share_submission" style="position:relative;"&gt;
+&lt;a class="slashpop" href="http://twitter.com/home?status=How+TV+Pirates+Accidentally+Pushed+a+25-Year-Old+Indie+Song+to+the+Top+of+the+Charts+in+Japan%3A+http%3A%2F%2Fbit.ly%2F2NbUtoi"&gt;&lt;img src="https://a.fsdn.com/sd/twitter_icon_large.png"&gt;&lt;/a&gt;
+&lt;a class="slashpop" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fyro.slashdot.org%2Fstory%2F19%2F02%2F17%2F1915237%2Fhow-tv-pirates-accidentally-pushed-a-25-year-old-indie-song-to-the-top-of-the-charts-in-japan%3Futm_source%3Dslashdot%26utm_medium%3Dfacebook"&gt;&lt;img src="https://a.fsdn.com/sd/facebook_icon_large.png"&gt;&lt;/a&gt;
+
+&lt;a class="nobg" href="http://plus.google.com/share?url=https://yro.slashdot.org/story/19/02/17/1915237/how-tv-pirates-accidentally-pushed-a-25-year-old-indie-song-to-the-top-of-the-charts-in-japan?utm_source=slashdot&amp;amp;utm_medium=googleplus" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"&gt;&lt;img src="https://www.gstatic.com/images/icons/gplus-16.png" alt="Share on Google+"/&gt;&lt;/a&gt;
+
+
+
+&lt;/div&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://yro.slashdot.org/story/19/02/17/1915237/how-tv-pirates-accidentally-pushed-a-25-year-old-indie-song-to-the-top-of-the-charts-in-japan?utm_source=atom1.0moreanon&amp;amp;utm_medium=feed"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;</summary>
+<updated>2019-02-17T19:16:00+00:00</updated>
+<author>
+ <name>msmash</name>
+</author>
+<category term="piracy" />
+<slash:department>algorithm-gods-at-work</slash:department>
+<slash:section>yro</slash:section>
+<slash:comments>39</slash:comments>
+<slash:hit_parade>39,33,13,9,1,0,0</slash:hit_parade>
+</entry>
+
+<entry>
+<id>https://tech.slashdot.org/story/19/02/17/1714227/germany-sees-big-rise-in-security-problems-affecting-infrastructure?utm_source=atom1.0mainlinkanon&amp;utm_medium=feed</id>
+<title>Germany Sees Big Rise in Security Problems Affecting Infrastructure</title>
+<link href="https://tech.slashdot.org/story/19/02/17/1714227/germany-sees-big-rise-in-security-problems-affecting-infrastructure?utm_source=atom1.0mainlinkanon&amp;utm_medium=feed" />
+<summary type="html">Germany has experienced a big increase in the number of security incidents hitting critical infrastructure such as power grids and water suppliers, the BSI cybersecurity agency said on Sunday, adding however that they were not all due to hacking. From a report: The Welt am Sonntag weekly had reported on Sunday that Germany had learned of 157 hacker attacks on critical infrastructure companies in the second half of 2018 compared to 145 attacks in the whole of the previous year. "The number of reports of IT security incidents has increased but it is not to be equated with the number of cyber attacks," tweeted the BSI in response to the newspaper report.&lt;p&gt;&lt;div class="share_submission" style="position:relative;"&gt;
+&lt;a class="slashpop" href="http://twitter.com/home?status=Germany+Sees+Big+Rise+in+Security+Problems+Affecting+Infrastructure%3A+http%3A%2F%2Fbit.ly%2F2NcIsyJ"&gt;&lt;img src="https://a.fsdn.com/sd/twitter_icon_large.png"&gt;&lt;/a&gt;
+&lt;a class="slashpop" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Ftech.slashdot.org%2Fstory%2F19%2F02%2F17%2F1714227%2Fgermany-sees-big-rise-in-security-problems-affecting-infrastructure%3Futm_source%3Dslashdot%26utm_medium%3Dfacebook"&gt;&lt;img src="https://a.fsdn.com/sd/facebook_icon_large.png"&gt;&lt;/a&gt;
+
+&lt;a class="nobg" href="http://plus.google.com/share?url=https://tech.slashdot.org/story/19/02/17/1714227/germany-sees-big-rise-in-security-problems-affecting-infrastructure?utm_source=slashdot&amp;amp;utm_medium=googleplus" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"&gt;&lt;img src="https://www.gstatic.com/images/icons/gplus-16.png" alt="Share on Google+"/&gt;&lt;/a&gt;
+
+
+
+&lt;/div&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://tech.slashdot.org/story/19/02/17/1714227/germany-sees-big-rise-in-security-problems-affecting-infrastructure?utm_source=atom1.0moreanon&amp;amp;utm_medium=feed"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;</summary>
+<updated>2019-02-17T18:04:00+00:00</updated>
+<author>
+ <name>msmash</name>
+</author>
+<category term="security" />
+<slash:department>security-woes</slash:department>
+<slash:section>technology</slash:section>
+<slash:comments>44</slash:comments>
+<slash:hit_parade>44,42,10,9,3,0,0</slash:hit_parade>
+</entry>
+
+<entry>
+<id>https://news.slashdot.org/story/19/02/17/174250/the-complicated-economy-of-open-source-software?utm_source=atom1.0mainlinkanon&amp;utm_medium=feed</id>
+<title>The Complicated Economy of Open Source Software</title>
+<link href="https://news.slashdot.org/story/19/02/17/174250/the-complicated-economy-of-open-source-software?utm_source=atom1.0mainlinkanon&amp;utm_medium=feed" />
+<summary type="html">An excerpt from a report, which looks at the complicated business of funding open source software development: On the surface, the open source software community has never been better. Companies and governments are adopting open source software at rates that would've been unfathomable 20 years ago, and a whole new generation of programmers are cutting their teeth on developing software in plain sight and making it freely available for anyone to use. Go a little deeper, however, and the cracks start to show. The ascendancy of open source has placed a mounting burden on the maintainers of popular software, who now handle more bug reports, feature requests, code reviews, and code commits than ever before. 
+
+At the same time, open source developers must also deal with an influx of corporate users who are unfamiliar with community norms when it comes to producing and consuming open source software. This leads to developer burnout and a growing feeling of resentment toward the companies that rely on free labor to produce software that is folded into products and sold back to consumers for huge profits. From this perspective, Heartbleed wasn't an isolated example of developer burnout and lack of funding, but an outgrowth of a systemic disease that had been festering in the open source software community for years. Identifying the symptoms and causes of this disease was the easy part; finding a cure is more difficult. Further reading: How Does Heartbleed Alter the 'Open Source Is Safer' Discussion?&lt;p&gt;&lt;div class="share_submission" style="position:relative;"&gt;
+&lt;a class="slashpop" href="http://twitter.com/home?status=The+Complicated+Economy+of+Open+Source+Software%3A+http%3A%2F%2Fbit.ly%2F2NbuvRP"&gt;&lt;img src="https://a.fsdn.com/sd/twitter_icon_large.png"&gt;&lt;/a&gt;
+&lt;a class="slashpop" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fnews.slashdot.org%2Fstory%2F19%2F02%2F17%2F174250%2Fthe-complicated-economy-of-open-source-software%3Futm_source%3Dslashdot%26utm_medium%3Dfacebook"&gt;&lt;img src="https://a.fsdn.com/sd/facebook_icon_large.png"&gt;&lt;/a&gt;
+
+&lt;a class="nobg" href="http://plus.google.com/share?url=https://news.slashdot.org/story/19/02/17/174250/the-complicated-economy-of-open-source-software?utm_source=slashdot&amp;amp;utm_medium=googleplus" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"&gt;&lt;img src="https://www.gstatic.com/images/icons/gplus-16.png" alt="Share on Google+"/&gt;&lt;/a&gt;
+
+
+
+&lt;/div&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://news.slashdot.org/story/19/02/17/174250/the-complicated-economy-of-open-source-software?utm_source=atom1.0moreanon&amp;amp;utm_medium=feed"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;</summary>
+<updated>2019-02-17T17:05:00+00:00</updated>
+<author>
+ <name>msmash</name>
+</author>
+<category term="opensource" />
+<slash:department>upon-further-reflection</slash:department>
+<slash:section>news</slash:section>
+<slash:comments>83</slash:comments>
+<slash:hit_parade>83,81,44,39,8,5,3</slash:hit_parade>
+</entry>
+
+<entry>
+<id>https://news.slashdot.org/story/19/02/17/1433214/bill-and-melinda-gates-textbooks-are-becoming-obsolete?utm_source=atom1.0mainlinkanon&amp;utm_medium=feed</id>
+<title>Bill and Melinda Gates: Textbooks Are Becoming Obsolete</title>
+<link href="https://news.slashdot.org/story/19/02/17/1433214/bill-and-melinda-gates-textbooks-are-becoming-obsolete?utm_source=atom1.0mainlinkanon&amp;utm_medium=feed" />
+<summary type="html">Reader theodp writes: Thanks to software, Bill and Melinda Gates report in their 2019 Annual Letter, textbooks are becoming obsolete. Bill writes: "I read more than my share of textbooks. But it's a pretty limited way to learn something. Even the best text can't figure out which concepts you understand and which ones you need more help with. It certainly can't tell your teacher how well you grasped last night's assigned reading. But now, thanks to software, the standalone textbook is becoming a thing of the past" (if so, it'll be a 60-year overnight success!). The Gates are putting their money where their mouths are -- their education investments include look-Ma-no-textbooks Khan Academy and Code.org. Code.org, whose AP Computer Science Principles course for high schools "does not require or follow a textbook", boasted in its just-released Annual Report that 38% of all AP CS exam takers in 2018 came from "Code.org Computer Science Principles classrooms," adding that it had spent $24.2 million of its donors' money on curriculum and its Code Studio learning platform (30,300 hours of coursework), another $46.7 million to prepare 87,000 new K-12 CS teachers, $12.4 million on Marketing, and $6.9 million on Government Affairs. So, do we still need textbooks?&lt;p&gt;&lt;div class="share_submission" style="position:relative;"&gt;
+&lt;a class="slashpop" href="http://twitter.com/home?status=Bill+and+Melinda+Gates%3A+Textbooks+Are+Becoming+Obsolete%3A+http%3A%2F%2Fbit.ly%2F2NcjQqa"&gt;&lt;img src="https://a.fsdn.com/sd/twitter_icon_large.png"&gt;&lt;/a&gt;
+&lt;a class="slashpop" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fnews.slashdot.org%2Fstory%2F19%2F02%2F17%2F1433214%2Fbill-and-melinda-gates-textbooks-are-becoming-obsolete%3Futm_source%3Dslashdot%26utm_medium%3Dfacebook"&gt;&lt;img src="https://a.fsdn.com/sd/facebook_icon_large.png"&gt;&lt;/a&gt;
+
+&lt;a class="nobg" href="http://plus.google.com/share?url=https://news.slashdot.org/story/19/02/17/1433214/bill-and-melinda-gates-textbooks-are-becoming-obsolete?utm_source=slashdot&amp;amp;utm_medium=googleplus" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"&gt;&lt;img src="https://www.gstatic.com/images/icons/gplus-16.png" alt="Share on Google+"/&gt;&lt;/a&gt;
+
+
+
+&lt;/div&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://news.slashdot.org/story/19/02/17/1433214/bill-and-melinda-gates-textbooks-are-becoming-obsolete?utm_source=atom1.0moreanon&amp;amp;utm_medium=feed"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;</summary>
+<updated>2019-02-17T15:01:00+00:00</updated>
+<author>
+ <name>msmash</name>
+</author>
+<category term="books" />
+<slash:department>how-about-that</slash:department>
+<slash:section>news</slash:section>
+<slash:comments>141</slash:comments>
+<slash:hit_parade>141,140,84,67,22,13,7</slash:hit_parade>
+</entry>
+
+<entry>
+<id>https://tech.slashdot.org/story/19/02/17/1351213/google-backtracks-on-chrome-modifications-that-would-have-crippled-ad-blockers?utm_source=atom1.0mainlinkanon&amp;utm_medium=feed</id>
+<title>Google Backtracks on Chrome Modifications That Would Have Crippled Ad Blockers</title>
+<link href="https://tech.slashdot.org/story/19/02/17/1351213/google-backtracks-on-chrome-modifications-that-would-have-crippled-ad-blockers?utm_source=atom1.0mainlinkanon&amp;utm_medium=feed" />
+<summary type="html">Google has changed its stance on upcoming Chrome Manifest V3 changes as benchmark shows they lied about performance hit. Catalin Cimpanu, writing for ZDNet: A study analyzing the performance of Chrome ad blocker extensions published on Friday has proven wrong claims made by Google developers last month, when a controversy broke out surrounding their decision to modify the Chrome browser in such a way that would have eventually killed off ad blockers and many other extensions. The study, carried out by the team behind the Ghostery ad blocker, found that ad blockers had sub-millisecond impact on Chrome's network requests that could hardly be called a performance hit. Hours after the Ghostery team published its study and benchmark results, the Chrome team backtracked on their planned modifications. At the root of Ghostery's benchmark into ad blocker performance stands Manifest V3, a new standard for developing Chrome extensions that Google announced last October.&lt;p&gt;&lt;div class="share_submission" style="position:relative;"&gt;
+&lt;a class="slashpop" href="http://twitter.com/home?status=Google+Backtracks+on+Chrome+Modifications+That+Would+Have+Crippled+Ad+Blockers%3A+http%3A%2F%2Fbit.ly%2F2NeTXGc"&gt;&lt;img src="https://a.fsdn.com/sd/twitter_icon_large.png"&gt;&lt;/a&gt;
+&lt;a class="slashpop" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Ftech.slashdot.org%2Fstory%2F19%2F02%2F17%2F1351213%2Fgoogle-backtracks-on-chrome-modifications-that-would-have-crippled-ad-blockers%3Futm_source%3Dslashdot%26utm_medium%3Dfacebook"&gt;&lt;img src="https://a.fsdn.com/sd/facebook_icon_large.png"&gt;&lt;/a&gt;
+
+&lt;a class="nobg" href="http://plus.google.com/share?url=https://tech.slashdot.org/story/19/02/17/1351213/google-backtracks-on-chrome-modifications-that-would-have-crippled-ad-blockers?utm_source=slashdot&amp;amp;utm_medium=googleplus" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"&gt;&lt;img src="https://www.gstatic.com/images/icons/gplus-16.png" alt="Share on Google+"/&gt;&lt;/a&gt;
+
+
+
+&lt;/div&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="https://tech.slashdot.org/story/19/02/17/1351213/google-backtracks-on-chrome-modifications-that-would-have-crippled-ad-blockers?utm_source=atom1.0moreanon&amp;amp;utm_medium=feed"&gt;Read more of this story&lt;/a&gt; at Slashdot.&lt;/p&gt;</summary>
+<updated>2019-02-17T14:01:00+00:00</updated>
+<author>
+ <name>msmash</name>
+</author>
+<category term="chromium" />
+<slash:department>how-about-that</slash:department>
+<slash:section>technology</slash:section>
+<slash:comments>101</slash:comments>
+<slash:hit_parade>101,99,57,53,24,13,7</slash:hit_parade>
+</entry>
+
+</feed>
