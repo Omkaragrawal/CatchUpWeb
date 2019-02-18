@@ -4,8 +4,8 @@ const morgan = require('morgan');
 const http = require('http');
 const https = require('https');
 const path = require('path');
-const Pool = require('pg').Pool;
-const bodyparser = require('body-parser');
+const axios = require('axios')
+const bodyParser = require('body-parser');
 
 //------------------------------------------------------------------------------------------------------
 //                    To frequent use constants
@@ -19,8 +19,9 @@ const port = process.env.PORT || 8080;
 //------------------------------------------------------------------------------------------------------
 
 app.use(morgan('combined'));
+app.use(bodyParser.json())
 app.use(express.static(path.join(__dirname, 'assets')));
-app.use(compression());
+// app.use(compression());
 app.listen(port, () => { console.log(`Our site is hosted on ${port}! If you donot know to open just go to browser and type (localhost:${port})`) });
 
 //------------------------------------------------------------------------------------------------------
@@ -28,6 +29,26 @@ app.listen(port, () => { console.log(`Our site is hosted on ${port}! If you dono
 //------------------------------------------------------------------------------------------------------
 //--------------------For GET Requests------------------------------------------------------------------
 
+app.get('/favicon.ico', (req, res) => {
+    res.sendFile(path.join(__dirname, 'catchup.png'))
+})
+
+app.get('/index.js', (req, res) => {
+    res.sendFile(path.join(__dirname, 'index.js'))
+})
+
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
+
+app.get('/hackernews', (req, res) => {
+    console.log('making request');
+    axios.get("https://hnrss.org/newest.jsonfeed", {responseType: 'json'})
+        .then(resp => {
+            res.send(resp.data);
+        })
+        .catch(err => {
+            console.log(`\n\n ${err} \n\n`)
+            res.status(500).send(err)
+        })
+})

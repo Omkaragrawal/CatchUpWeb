@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/Omkaragrawal/catchupweb/issues"
   },
-  "homepage": "https://github.com/Omkaragrawal/catchupweb#readme"
+  "homepage": "https://github.com/Omkaragrawal/catchupweb#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "express": "^4.16.4",
+    "http": "0.0.0",
+    "https": "^1.0.0",
+    "morgan": "^1.9.1",
+    "path": "^0.12.7"
+  }
 }
