@@ -4,7 +4,6 @@
   "description": "A web version of catchup",
   "main": "server.js",
   "scripts": {
-    "start": "node server.min.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
