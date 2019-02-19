@@ -1,7 +1,7 @@
 'use strict'
 const contentHn = document.getElementById('contentHn');
 const postBtn = document.getElementById('posts');
-let count = 0;
+let count = 1;
 window.onload = param => {
     document.location.hash = '#hackernews';
 }
