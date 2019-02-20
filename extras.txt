@@ -8,3 +8,9 @@ BlockedNode_Win32 -l 127.0.0.1:8080
 minify ---> HookyQR
 JS & CSS Minifier --> olback
 https://developer.github.com/v3/#json-p-callbacks
+
+https://tinypng.com/developers/reference/nodejs
+
+https://expressjs.com/en/advanced/best-practice-performance.html
+
+https://yuiblog.com/blog/2010/12/14/strict-mode-is-coming-to-town/

@@ -1,13 +1,14 @@
-'use strict'
+"use strict";
+
 const express = require('express');
 const morgan = require('morgan');
 const http = require('http');
 const https = require('https');
 const path = require('path');
-const axios = require('axios')
+const axios = require('axios');
 const bodyParser = require('body-parser');
-const localtunnel = require('localtunnel');
 const compression = require('compression');
+const helmet = require('helmet');
 
 //------------------------------------------------------------------------------------------------------
 //                    To frequent use constants
@@ -21,6 +22,7 @@ const port = process.env.PORT || 8080;
 //------------------------------------------------------------------------------------------------------
 
 app.use(morgan('combined'));
+app.use(helmet());
 app.use(bodyParser.json());
 app.use(bodyParser.text({type: "text/xml"}));
 app.use(express.static(path.join(__dirname, 'assets')));
@@ -34,8 +36,8 @@ app.listen(port, () => {console.log(`Our site is hosted on ${port}! If you donot
 //--------------------For GET Requests------------------------------------------------------------------
 
 app.get('/favicon.ico', (req, res) => {
-    res.sendFile(path.join(__dirname, 'assets','catchup.jpg'));
-})
+    res.sendFile(path.join(__dirname, 'assets','catchup.png'));
+});
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.min.html'));
@@ -49,7 +51,7 @@ app.get('/hackernews', (req, res) => {
         .catch(err => {
             console.log(`\n\n ${err} \n\n`);
             res.status(500).send(err);
-        })
+        });
 });
 
 app.get('/hackernewsTop', (req, res) => {
@@ -60,7 +62,7 @@ app.get('/hackernewsTop', (req, res) => {
         .catch(err => {
             console.log(`\n\n ${err} \n\n`);
             res.status(500).send(err);
-        })
+        });
 });
 
 app.get('/hackerearth', (req, res) => {
@@ -71,5 +73,5 @@ app.get('/hackerearth', (req, res) => {
         .catch(err => {
             console.log(`\n\n ${err} \n\n`);
             res.status(500).send(err);
-        })
+        });
 });
