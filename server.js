@@ -34,7 +34,7 @@ app.listen(port, () => {console.log(`Our site is hosted on ${port}! If you donot
 //--------------------For GET Requests------------------------------------------------------------------
 
 app.get('/favicon.ico', (req, res) => {
-    res.sendFile(path.join(__dirname, 'assets','catchup.png'));
+    res.sendFile(path.join(__dirname, 'assets','catchup.jpg'));
 })
 
 app.get('/', (req, res) => {
