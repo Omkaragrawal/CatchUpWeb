@@ -32,7 +32,16 @@ function loadData(channel) {
             break;
         case "hackernewsTop":
                 postBtn.hidden=true;
-            console.log("hackernewsTOP");
+            // console.log("hackernewsTOP");
+            axios.get('https://hacker-news.firebaseio.com/v0/topstories.json', { responseType: 'json' })
+                .then(response => {
+                    postBtn.hidden = true;
+                    // console.log(response.data.items);
+                    toHnlTable(response.data);
+                })
+                .catch(err => {
+                    console.log(err)
+                })
             postBtn.hidden= false;
             break;
         case 'hackerearth':
@@ -58,10 +67,25 @@ function toHnTable(data) {
     }
     postBtn.hidden=false;
 }
+function toHnlTable (data) {
+    axios.get('https://hacker-news.firebaseio.com/v0/item/' + data[0] + '.json', { responseType: 'json' })
+                .then(response => {
+                    postBtn.hidden = true;
+                    console.log(response.data);
+                    contentHn.hidden=true;
+                    contentHn.innerHTML = '';
+                    contentHn.innerHTML += `<tr><td colspan="2"><p><a href ="${response.data.url}" trget="_blank"> ${response.data.title}</a></div><div>Author:  ${response.data.by} &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspPublished on: ${new Date(response.data.time)} </div></p></tdcolspan></tr>`;
+                    contentHn.hidden=false; 
+                    postBtn.hidden=false;
+                })
+                .catch(err => {
+                    console.log(err)
+                })
+}
 
 document.getElementById('btnReload').onclick = () => loadData(window.location.hash.replace('#', ''));
 postBtn.onclick = (event) => {
     count++;
-    if (count % 2 == 0) { loadData("hackernewsTop"); event.srcElement.innerHTML = "Show LATEST"; }
-    else { loadData("hackernews"); event.srcElement.innerHTML = "Show TOP"; }
+    if (count % 2 == 0) { window.location.hash = "hackernewsTop"; event.srcElement.innerHTML = "Show LATEST"; }
+    else { window.location.hash = "hackernews"; event.srcElement.innerHTML = "Show TOP"; }
 }

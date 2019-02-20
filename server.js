@@ -26,7 +26,7 @@ app.use(helmet());
 app.use(bodyParser.json());
 app.use(bodyParser.text({type: "text/xml"}));
 app.use(express.static(path.join(__dirname, 'assets')));
-app.use(compression());
+app.use(compression('BROTLI_MODE_TEXT'));
 app.listen(port, () => {console.log(`Our site is hosted on ${port}! If you donot know to open just go to browser and type (localhost:${port})`);
 });
 
@@ -55,7 +55,7 @@ app.get('/hackernews', (req, res) => {
 });
 
 app.get('/hackernewsTop', (req, res) => {
-    axios.get("https://hnrss.org/newest.jsonfeed", {responseType: 'json'})
+    axios.get("https://hacker-news.firebaseio.com/v0/topstories.json", {responseType: 'json'})
         .then(resp => {
             res.send(resp.data);
         })
