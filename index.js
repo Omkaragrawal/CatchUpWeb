@@ -3,7 +3,12 @@ const contentHn = document.getElementById('contentHn');
 const postBtn = document.getElementById('posts');
 let count = 1;
 window.onload = param => {
+    if(!window.location.hash){
+    loadData('hackernews');
     document.location.hash = '#hackernews';
+    } else {
+        loadData(window.location.hash.split('#')[1]);
+    }
 }
 window.onhashchange = param => loadData(param.newURL.split('#')[1]);
 
