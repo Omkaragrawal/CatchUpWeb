@@ -2,6 +2,7 @@
 
 const contentHn = document.getElementById('contentHn'),
     postBtn = document.getElementById('posts');
+let rowData = '';
 window.onload = () => {
     if (!window.location.hash) {
         loadData('hackernews');
@@ -85,24 +86,53 @@ function toHnTable(data) {
 }
 
 function toHnlTable(data) {
+    // postBtn.hidden = true;
+    // contentHn.hidden = true;
+    contentHn.innerHTML = '';
     console.log(data.length + "\n" + data);
     let getData = async () => {
-    let postData = data.map(id => {
-        return `https://hacker-news.firebaseio.com/v0/item/${id}.json`;
+        let postData = data.map(id => {
+            return `https://hacker-news.firebaseio.com/v0/item/${id}.json`;
+        }).map(url => axios.get(url, {
+            responseType: 'json'
+        }));
+        try {
+            return Promise.resolve((await Promise.all(postData)).map(res => res.data));
+        } catch (err) {
+            console.error(err);
+            return Promise.reject(new Error(rowData));
+        }
+    };
+    getData().then(res => {
+        rowData = res.map(row => {
+            return (`<tr>
+        <td colspan="2">
+        <p><a href ="${row.url}"trget="_blank" rel="noopener"> ${row.title}</a>
+        </div>
+        <div>Author:  ${row.by} &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        Published on: ${new Date(row.time*1000).toLocaleString('en-GB',{
+            timeZoneName : 'short',
+            hc     : 'h24',
+            day    : 'numeric',
+            month  : 'long',
+            year   : 'numeric',
+            hour   : '2-digit',
+            minute : '2-digit',
+            second : '2-digit'
+        })} 
+        </div></p>
+        </td>
+        </tr>`)
+        });
+    }).catch(err => console.log(".catch => ERR:\t" + err))
+    .finally(() => {
+        console.log(rowData.length);
+        postBtn.hidden = true;
+        for (let element of rowData) {
+            contentHn.innerHTML += element;
+        }
+        postBtn.hidden = false;
     });
-    console.log(postData);
-    postData = postData.map(url=>axios.get(url,{responseType: 'json'}));
-    console.log(postData);
-    let rowData = '';
-    try {
-    rowData = (await Promise.all(postData)).map(res=>res.data);
-    } catch (err) {
-        console.error(err);
-    }
-    return rowData;
-};
-const arrangeData = getData();
-console.log(arrangeData);
     // for (let i = 0; i < 10; i++) {
     //     postBtn.hidden = true;
     //     contentHn.innerHTML = '';
