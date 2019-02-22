@@ -1,9 +1,12 @@
 {
     "node": true,
-    "esversion": 6,
+    "esversion":8,
     "undef": true,
     "unused": true,
     "globals": {
-        "require": true
+        "require": true,
+        "window":true,
+        "document":true,
+        "axios":true
     }
 }

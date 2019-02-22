@@ -15,3 +15,4 @@ https://expressjs.com/en/advanced/best-practice-performance.html
 
 https://yuiblog.com/blog/2010/12/14/strict-mode-is-coming-to-town/
 https://developers.google.com/web/updates/2018/07/site-isolation
+https://www.one-tab.com/page/5alZaQdIT82nD4tEeTdW1w
