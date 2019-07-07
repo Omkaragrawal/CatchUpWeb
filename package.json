@@ -17,15 +17,16 @@
   },
   "homepage": "https://github.com/Omkaragrawal/catchupweb#readme",
   "dependencies": {
-    "axios":        "^0.18.1",
-    "compression":  "^1.7.3",
-    "express":      "^4.16.4",
-    "helmet":       "^3.15.1",
-    "http":         "0.0.0",
-    "https":        "^1.0.0",
-    "jshint":       "^2.10.1",
-    "morgan":       "^1.9.1",
-    "path":         "^0.12.7",
-    "uglify-es":    "github:mishoo/UglifyJS2#harmony"
+    "axios": "^0.18.1",
+    "compression": "^1.7.3",
+    "express": "^4.16.4",
+    "helmet": "^3.15.1",
+    "http": "0.0.0",
+    "https": "^1.0.0",
+    "jshint": "^2.10.1",
+    "morgan": "^1.9.1",
+    "path": "^0.12.7",
+    "shelljs": "^0.8.3",
+    "uglify-es": "github:mishoo/UglifyJS2#harmony"
   }
 }
