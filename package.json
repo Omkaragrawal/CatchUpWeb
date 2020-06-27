@@ -20,13 +20,13 @@
     "axios": "^0.18.1",
     "compression": "^1.7.3",
     "express": "^4.16.4",
-    "helmet": "^3.15.1",
+    "helmet": "3.23.3",
     "http": "0.0.0",
     "https": "^1.0.0",
-    "jshint": "^2.10.1",
-    "morgan": "^1.9.1",
+    "jshint": "2.11.1",
+    "morgan": "1.10.0",
     "path": "^0.12.7",
-    "shelljs": "^0.8.3",
+    "shelljs": "0.8.4",
     "uglify-es": "github:mishoo/UglifyJS2#harmony"
   }
 }
