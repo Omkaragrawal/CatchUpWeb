@@ -3,7 +3,24 @@
 const contentHn = document.getElementById('contentHn'),
     postBtn = document.getElementById('posts');
 let rowData = '';
+
+document.getElementById('nextBtn').addEventListener('click', () => {
+    // event.preventDefault();
+    let hash = window.location.hash.split('#');
+    hash[2] = Number(hash[2]) + 1 || 1;
+    console.log(hash.join('#'));
+    window.location.hash = hash.join('#');
+
+});
+
+document.getElementById('prev').onclick = () => {
+    let hash = window.location.hash.split('#');
+    hash[2] = Number(hash[2]) - 1 || 1;
+    console.log(hash.join('#'));
+    window.location.hash = hash.join('#');
+}
 window.onload = () => {
+    window.pos = 0;
     if (!window.location.hash) {
         loadData('hackernews');
         document.location.hash = '#hackernews';
@@ -18,7 +35,12 @@ window.onhashchange = param => loadData(param.newURL.split('#')[1]);
 // }
 
 
+
 function loadData(channel) {
+    document.getElementById('nextBtn').hidden = true;
+    document.getElementById('prev').hidden = true;
+    document.getElementById('loading').hidden = false;
+    document.getElementById('contentHn').hidden   = true;
     switch (channel) {
         case 'hackernews':
             axios.get('/hackernews', {
@@ -30,11 +52,14 @@ function loadData(channel) {
                     toHnTable(response.data.items);
                 })
                 .catch(err => {
+                    document.getElementById('loading').hidden = true;
+                    document.getElementById('contentHn').hidden   = false;
                     console.log(err);
                 });
             break;
         case "hackernewsTop":
             postBtn.hidden = true;
+
             // console.log("hackernewsTOP");
             axios.get('https://hacker-news.firebaseio.com/v0/topstories.json', {
                     responseType: 'json'
@@ -45,6 +70,8 @@ function loadData(channel) {
                     toHnlTable(response.data);
                 })
                 .catch(err => {
+                    document.getElementById('loading').hidden = true;
+                    document.getElementById('contentHn').hidden   = false;
                     console.log(err);
                 });
             postBtn.hidden = false;
@@ -57,6 +84,8 @@ function loadData(channel) {
                     console.log(response.data);
                 })
                 .catch(err => {
+                    document.getElementById('loading').hidden = true;
+                    document.getElementById('contentHn').hidden   = false;
                     console.log(err);
                 });
             break;
@@ -83,6 +112,8 @@ function toHnTable(data) {
         }) + '</div></p></tdcolspan></tr>';
     }
     postBtn.hidden = false;
+    document.getElementById('contentHn').hidden = false;
+        document.getElementById('loading').hidden = true;
 }
 
 function toHnlTable(data) {
@@ -90,9 +121,10 @@ function toHnlTable(data) {
     // contentHn.hidden = true;
     contentHn.innerHTML = '';
     console.log(data.length + "\n" + data);
-    let pos = 0;
-    let start = 0 + pos;
-    let end = 10 + pos;
+    let start = 0 + (Number(window.location.hash.split('#')[2]) || 1);
+    // let end = 10 + (Number(window.location.hash.split('#')[2]) || 1);
+    let end = 10 + start;
+    console.log("start ", start, " end ", end);
     let data1 = data.slice(start, end);
     let getData = async () => {
         let postData = data1.map(id => {
@@ -126,16 +158,20 @@ function toHnlTable(data) {
         })} 
         </div></p>
         </td>
-        </tr>`)
+        </tr>`);
         });
     }).catch(err => console.log(".catch => ERR:\t" + err))
     .finally(() => {
         console.log(rowData.length);
         postBtn.hidden = true;
+        document.getElementById('nextBtn').hidden = false;
+        document.getElementById('prev').hidden = false;
         for (let element of rowData) {
             contentHn.innerHTML += element;
         }
         postBtn.hidden = false;
+        document.getElementById('contentHn').hidden = false;
+        document.getElementById('loading').hidden = true;
     });
     // for (let i = 0; i < 10; i++) {
     //     postBtn.hidden = true;
