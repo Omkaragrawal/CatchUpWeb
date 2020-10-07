@@ -24,7 +24,7 @@
     "http": "0.0.0",
     "https": "^1.0.0",
     "jshint": "^2.10.1",
-    "morgan": "^1.9.1",
+    "morgan": "^1.10.0",
     "path": "^0.12.7",
     "shelljs": "^0.8.4",
     "uglify-es": "github:mishoo/UglifyJS2#harmony"
