@@ -39,7 +39,7 @@ function loadData(channel) {
     document.getElementById('nextBtn').hidden = true;
     document.getElementById('prev').hidden = true;
     document.getElementById('loading').hidden = false;
-    document.getElementById('contentHn').hidden   = true;
+    contentHn.hidden   = true;
     switch (channel) {
         case 'hackernews':
             axios.get('/hackernews', {
@@ -52,7 +52,7 @@ function loadData(channel) {
                 })
                 .catch(err => {
                     document.getElementById('loading').hidden = true;
-                    document.getElementById('contentHn').hidden   = false;
+                    contentHn.hidden   = false;
                     console.log(err);
                 });
             break;
@@ -70,7 +70,7 @@ function loadData(channel) {
                 })
                 .catch(err => {
                     document.getElementById('loading').hidden = true;
-                    document.getElementById('contentHn').hidden   = false;
+                    contentHn.hidden   = false;
                     console.log(err);
                 });
             postBtn.hidden = false;
@@ -84,7 +84,7 @@ function loadData(channel) {
                 })
                 .catch(err => {
                     document.getElementById('loading').hidden = true;
-                    document.getElementById('contentHn').hidden   = false;
+                    contentHn.hidden   = false;
                     console.log(err);
                 });
             break;
@@ -111,7 +111,7 @@ function toHnTable(data) {
         }) + '</div></p></tdcolspan></tr>';
     }
     postBtn.hidden = false;
-    document.getElementById('contentHn').hidden = false;
+    contentHn.hidden = false;
         document.getElementById('loading').hidden = true;
 }
 
@@ -169,7 +169,7 @@ function toHnlTable(data) {
             contentHn.innerHTML += element;
         }
         postBtn.hidden = false;
-        document.getElementById('contentHn').hidden = false;
+        contentHn.hidden = false;
         document.getElementById('loading').hidden = true;
     });
     // for (let i = 0; i < 10; i++) {

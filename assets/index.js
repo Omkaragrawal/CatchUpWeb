@@ -20,7 +20,6 @@ document.getElementById('prev').onclick = () => {
     window.location.hash = hash.join('#');
 }
 window.onload = () => {
-    window.pos = 0;
     if (!window.location.hash) {
         loadData('hackernews');
         document.location.hash = '#hackernews';
@@ -40,7 +39,7 @@ function loadData(channel) {
     document.getElementById('nextBtn').hidden = true;
     document.getElementById('prev').hidden = true;
     document.getElementById('loading').hidden = false;
-    document.getElementById('contentHn').hidden   = true;
+    contentHn.hidden   = true;
     switch (channel) {
         case 'hackernews':
             axios.get('/hackernews', {
@@ -53,7 +52,7 @@ function loadData(channel) {
                 })
                 .catch(err => {
                     document.getElementById('loading').hidden = true;
-                    document.getElementById('contentHn').hidden   = false;
+                    contentHn.hidden   = false;
                     console.log(err);
                 });
             break;
@@ -71,7 +70,7 @@ function loadData(channel) {
                 })
                 .catch(err => {
                     document.getElementById('loading').hidden = true;
-                    document.getElementById('contentHn').hidden   = false;
+                    contentHn.hidden   = false;
                     console.log(err);
                 });
             postBtn.hidden = false;
@@ -85,12 +84,33 @@ function loadData(channel) {
                 })
                 .catch(err => {
                     document.getElementById('loading').hidden = true;
-                    document.getElementById('contentHn').hidden   = false;
+                    contentHn.hidden   = false;
                     console.log(err);
                 });
             break;
+        case 'slashdot':
+            if (!!!parser){
+            let elem = document.createElement('script');
+            elem.src = "https://cdnjs.cloudflare.com/ajax/libs/fast-xml-parser/3.17.1/parser.min.js";
+            elem.integrity = "sha256-rdj1KYq6fdIXKQYjbgUE1PNiqpFoSGJlrT7AlPBae/c=";
+            elem.crossOrigin = "anonymous";
+            document.body.appendChild(elem);
+            }
+            axios.get('https://corsenabled.herokuapp.com/get?to=http://rss.slashdot.org/Slashdot/slashdotMain')
+                .then(feed => parser.parse(feed.data)["rdf:RDF"].item)
+                .then(items => {
+                    contentHn.innerHTML = items;
+                    contentHn.hidden = false;
+                    document.getElementById('loading').hidden = true;
+                    toSlashdotTable(items);
+                })
+                .catch(err => {
+                    alert(err);
+                })
+            break;
         default:
-            console.log("default:  " + channel);
+        console.log("default:  " + channel);
+        window.location.hash = '#hackernews';
     }
 }
 
@@ -100,7 +120,7 @@ function toHnTable(data) {
     console.log(data);
     for (let i = 0; i < data.length; i++) {
         // console.log(data[i] + "\n")
-        contentHn.innerHTML += '<tr><td colspan="2"><p>' + data[i].content_html.replace(' URL', "").replace(/">.*\s<.*\s.*\s.*/g, `" target="_blank" > ${data[i].title}`) + '</a></div><div>Author: ' + data[i].author + '&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspPublished on: ' + new Date(data[i].date_published).toLocaleString('en-GB', {
+        contentHn.innerHTML += '<tr><td colspan="2"><p>' + data[i].content_html.replace(' URL', "").replace(/">.*\s<.*\s.*\s.*/g, `" target="_blank" rel="noreferrer noopener" > ${data[i].title}`) + '</a></div><div>Author: ' + data[i].author + '&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspPublished on: ' + new Date(data[i].date_published).toLocaleString('en-GB', {
             timeZoneName: 'short',
             hc: 'h24',
             day: 'numeric',
@@ -112,7 +132,7 @@ function toHnTable(data) {
         }) + '</div></p></tdcolspan></tr>';
     }
     postBtn.hidden = false;
-    document.getElementById('contentHn').hidden = false;
+    contentHn.hidden = false;
         document.getElementById('loading').hidden = true;
 }
 
@@ -143,7 +163,7 @@ function toHnlTable(data) {
         rowData = res.map(row => {
             return (`<tr>
         <td colspan="2">
-        <p><a href ="${row.url}"trget="_blank" rel="noopener"> ${row.title}</a>
+        <p><a href ="${row.url}" target="_blank" rel="noreferrer noopener"> ${row.title}</a>
         </div>
         <div>Author:  ${row.by} &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
         Published on: ${new Date(row.time*1000).toLocaleString('en-GB',{
@@ -170,7 +190,7 @@ function toHnlTable(data) {
             contentHn.innerHTML += element;
         }
         postBtn.hidden = false;
-        document.getElementById('contentHn').hidden = false;
+        contentHn.hidden = false;
         document.getElementById('loading').hidden = true;
     });
     // for (let i = 0; i < 10; i++) {
@@ -182,7 +202,7 @@ function toHnlTable(data) {
     //         .then(response => {
     //             console.log(response.data);
     //             postData.push(response.data);
-    //             contentHn.hidden = true;
+                // contentHn.hidden = true;
     //             contentHn.innerHTML += `<tr>
     //                                     <td colspan="2">
     //                                     <p><a href ="${response.data.url}"trget="_blank" rel="noopener"> ${response.data.title}</a>
@@ -201,7 +221,7 @@ function toHnlTable(data) {
     //                                         </div></p>
     //                                         </td>
     //                                         </tr>`;
-    //             contentHn.hidden = false;
+                // contentHn.hidden = false;
     //         })
     //         .catch(err => {
     //             console.log(err);
@@ -211,6 +231,14 @@ function toHnlTable(data) {
     // let urlArray = data.map(i => axios.get('https://hacker-news.firebaseio.com/v0/item/' + i + '.json',{ responseType: 'json' }));
     // console.log(urlArray);
 }
+
+function toSlashdotTable(blogList) {
+    // blogList.forEach(blog => {
+    
+    // });
+    console.log(blogList);
+}
+
 
 document.getElementById('btnReload').onclick = () => loadData(window.location.hash.replace('#', ''));
 let countClick = 1;
