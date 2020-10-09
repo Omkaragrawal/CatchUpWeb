@@ -20,9 +20,22 @@ const port = process.env.PORT || 8080;
 //------------------------------------------------------------------------------------------------------
 //                    For adding functionalities to express
 //------------------------------------------------------------------------------------------------------
-
+if(process.env.NODE_ENV == "production") {
+    app.set('trust proxy', 1);
+}
 app.use(morgan('combined'));
 app.use(helmet());
+app.use(
+    helmet.contentSecurityPolicy({
+      directives: {
+        defaultSrc: ["'self'", "'unsafe-inline'"],
+        scriptSrc: ["'self'", "cdnjs.cloudflare.com"],
+        "style-src-elem": ["'self'", "cdnjs.cloudflare.com"],
+        "connect-src": ["'self'", "corsenabled.herokuapp.com", "*.firebaseio.com"]
+      },
+    })
+  );
+  
 app.use(bodyParser.json());
 app.use(bodyParser.text({type: "text/xml"}));
 app.use(express.static(path.join(__dirname, 'assets')));
