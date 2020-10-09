@@ -40,7 +40,7 @@ app.get('/favicon.ico', (req, res) => {
 });
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'index.min.html'));
+    res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 app.get('/hackernews', (req, res) => {
