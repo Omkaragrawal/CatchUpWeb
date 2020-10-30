@@ -31,7 +31,7 @@ app.use(
         defaultSrc: ["'self'", "'unsafe-inline'"],
         scriptSrc: ["'self'", "cdnjs.cloudflare.com"],
         "style-src-elem": ["'self'", "cdnjs.cloudflare.com"],
-        "connect-src": ["'self'", "corsenabled.herokuapp.com", "*.firebaseio.com"]
+        "connect-src": ["'self'", "corsenabled.herokuapp.com", "*.firebaseio.com", "*.hackerearth.com"]
       },
     })
   );

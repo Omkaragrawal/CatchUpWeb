@@ -77,19 +77,6 @@ function loadData(channel) {
                 });
             postBtn.hidden = false;
             break;
-        case 'hackerearth':
-            axios.get('/hackerearth', {
-                    responseType: 'document'
-                })
-                .then(response => {
-                    console.log(response.data);
-                })
-                .catch(err => {
-                    document.getElementById('loading').hidden = true;
-                    contentHn.hidden = false;
-                    console.log(err);
-                });
-            break;
         case 'slashdot':
             if (!!!parser) {
                 let elem = document.createElement('script');
@@ -97,7 +84,7 @@ function loadData(channel) {
                 elem.integrity = "sha256-rdj1KYq6fdIXKQYjbgUE1PNiqpFoSGJlrT7AlPBae/c=";
                 elem.crossOrigin = "anonymous";
                 document.body.appendChild(elem);
-                
+
                 // let elem1 = document.createElement('script');
                 // elem1.src = "https://cdnjs.cloudflare.com/ajax/libs/Clamp.js/0.5.1/clamp.min.js";
                 // elem1.integrity = "sha256-rdj1KYq6fdIXKQYjbgUE1PNiqpFoSGJlrT7AlPBae/c=";
@@ -111,7 +98,30 @@ function loadData(channel) {
                 })
                 .catch(err => {
                     alert(err);
+                });
+            break;
+        case 'hackerearth':
+            if (!!!parser) {
+                let elem = document.createElement('script');
+                elem.src = "https://cdnjs.cloudflare.com/ajax/libs/fast-xml-parser/3.17.1/parser.min.js";
+                elem.integrity = "sha256-rdj1KYq6fdIXKQYjbgUE1PNiqpFoSGJlrT7AlPBae/c=";
+                elem.crossOrigin = "anonymous";
+                document.body.appendChild(elem);
+
+                // let elem1 = document.createElement('script');
+                // elem1.src = "https://cdnjs.cloudflare.com/ajax/libs/Clamp.js/0.5.1/clamp.min.js";
+                // elem1.integrity = "sha256-rdj1KYq6fdIXKQYjbgUE1PNiqpFoSGJlrT7AlPBae/c=";
+                // elem1.crossOrigin = "anonymous";
+                // document.body.appendChild(elem1);
+            }
+            axios.get('https://engineering.hackerearth.com/atom.xml')
+                .then(feed => parser.parse(feed.data).feed.entry)
+                .then(items => {
+                    toHackerearthTable(items);
                 })
+                .catch(err => {
+                    alert(err);
+                });
             break;
         default:
             console.log("default:  " + channel);
@@ -262,6 +272,63 @@ function toSlashdotTable(blogList) {
     console.log(blogList);
 }
 
+function toHackerearthTable(data) {
+    // postBtn.hidden = true;
+    // contentHn.hidden = true;
+    console.log(data.length + "\n" + data);
+    let start = 0 + (Number(window.location.hash.split('#')[2]) || 1);
+    // let end = 10 + (Number(window.location.hash.split('#')[2]) || 1);
+    let end = 10 + start;
+    console.log("start ", start, " end ", end);
+    let data1 = data.slice(start, end);
+    let getData = async () => {
+        let postData = data1.map(id => {
+            return `https://hacker-news.firebaseio.com/v0/item/${id}.json`;
+        }).map(url => axios.get(url, {
+            responseType: 'json'
+        }));
+        try {
+            return Promise.resolve((await Promise.all(postData)).map(res => res.data));
+        } catch (err) {
+            console.error(err);
+            return Promise.reject(new Error(rowData));
+        }
+    };
+    getData().then(res => {
+            rowData = res.map(row => {
+                return (`<tr>
+        <td colspan="2">
+        <p><a href ="${row.url}" target="_blank" rel="noreferrer noopener"> ${row.title}</a>
+        </div>
+        <div>Author:  ${row.by} &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        Published on: ${new Date(row.time*1000).toLocaleString('en-GB',{
+            timeZoneName : 'short',
+            hc     : 'h24',
+            day    : 'numeric',
+            month  : 'long',
+            year   : 'numeric',
+            hour   : '2-digit',
+            minute : '2-digit',
+            second : '2-digit'
+        })} 
+        </div></p>
+        </td>
+        </tr>`);
+            });
+        }).catch(err => console.log(".catch => ERR:\t" + err))
+        .finally(() => {
+            console.log(rowData.length);
+            postBtn.hidden = true;
+            document.getElementById('nextBtn').hidden = false;
+            document.getElementById('prev').hidden = false;
+            for (let element of rowData) {
+                contentHn.innerHTML += element;
+            }
+            postBtn.hidden = false;
+            contentHn.hidden = false;
+            document.getElementById('loading').hidden = true;
+        });
+}
 
 document.getElementById('btnReload').onclick = () => loadData(window.location.hash.replace('#', ''));
 let countClick = 1;
