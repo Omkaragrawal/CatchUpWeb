@@ -16,6 +16,7 @@ document.getElementById('nextBtn').addEventListener('click', () => {
 document.getElementById('prev').onclick = () => {
     let hash = window.location.hash.split('#');
     hash[2] = Number(hash[2]) - 1 || 0;
+    if (hash[2] < 0) hash[2] = 0;
     console.log(hash.join('#'));
     window.location.hash = hash.join('#');
 }
