@@ -1,6 +1,6 @@
-# Catchupweb - [Inspired by](https://github.com/ZacSweers/CatchUp)
+# [**Catchupweb Visit Here**](https://catchup.omkaragrawal.dev)
 
-This projects aim to be a web supporter of [this app](https://github.com/ZacSweers/CatchUp).
+This projects aim to be a web supporter of [this app](https://github.com/ZacSweers/CatchUp). But since original developer do not support web version, I have developed it here. Do try the android app, an amazingly developed project.
 
 ## Install
 
