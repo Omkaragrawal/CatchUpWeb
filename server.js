@@ -20,27 +20,22 @@ const port = process.env.PORT || 8080;
 //------------------------------------------------------------------------------------------------------
 //                    For adding functionalities to express
 //------------------------------------------------------------------------------------------------------
-if(process.env.NODE_ENV == "production") {
+if (process.env.NODE_ENV == "production") {
     app.set('trust proxy', 1);
 }
 app.use(morgan('combined'));
-app.use(helmet());
-app.use(
-    helmet.contentSecurityPolicy({
-      directives: {
-        defaultSrc: ["'self'", "'unsafe-inline'"],
-        scriptSrc: ["'self'", "cdnjs.cloudflare.com"],
-        "style-src-elem": ["'self'", "cdnjs.cloudflare.com"],
-        "connect-src": ["'self'", "corsenabled.herokuapp.com", "*.firebaseio.com", "*.hackerearth.com"]
-      },
-    })
-  );
-  
+app.use(helmet({
+    contentSecurityPolicy: false,
+}));
+
 app.use(bodyParser.json());
-app.use(bodyParser.text({type: "text/xml"}));
+app.use(bodyParser.text({
+    type: "text/xml"
+}));
 app.use(express.static(path.join(__dirname, 'assets')));
 app.use(compression('BROTLI_MODE_TEXT'));
-app.listen(port, () => {console.log(`Our site is hosted on ${port}! If you donot know to open just go to browser and type (localhost:${port})`);
+app.listen(port, () => {
+    console.log(`Our site is hosted on ${port}! If you donot know to open just go to browser and type (localhost:${port})`);
 });
 
 //------------------------------------------------------------------------------------------------------
@@ -49,7 +44,7 @@ app.listen(port, () => {console.log(`Our site is hosted on ${port}! If you donot
 //--------------------For GET Requests------------------------------------------------------------------
 
 app.get('/favicon.ico', (req, res) => {
-    res.sendFile(path.join(__dirname, 'assets','catchup.png'));
+    res.sendFile(path.join(__dirname, 'assets', 'catchup.png'));
 });
 
 app.get('/', (req, res) => {
@@ -57,7 +52,9 @@ app.get('/', (req, res) => {
 });
 
 app.get('/hackernews', (req, res) => {
-    axios.get("https://hnrss.org/newest.jsonfeed", {responseType: 'json'})
+    axios.get("https://hnrss.org/newest.jsonfeed", {
+            responseType: 'json'
+        })
         .then(resp => {
             res.send(resp.data);
         })
@@ -68,7 +65,9 @@ app.get('/hackernews', (req, res) => {
 });
 
 app.get('/hackernewsTop', (req, res) => {
-    axios.get("https://hacker-news.firebaseio.com/v0/topstories.json", {responseType: 'json'})
+    axios.get("https://hacker-news.firebaseio.com/v0/topstories.json", {
+            responseType: 'json'
+        })
         .then(resp => {
             res.send(resp.data);
         })
@@ -79,7 +78,9 @@ app.get('/hackernewsTop', (req, res) => {
 });
 
 app.get('/hackerearth', (req, res) => {
-    axios.get("http://engineering.hackerearth.com/atom.xml", {responseType: 'document'})
+    axios.get("http://engineering.hackerearth.com/atom.xml", {
+            responseType: 'document'
+        })
         .then(resp => {
             res.send(resp.data);
         })
