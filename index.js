@@ -42,7 +42,7 @@ function loadData(channel) {
     contentHn.hidden   = true;
     switch (channel) {
         case 'hackernews':
-            axios.get('ttps://hnrss.org/newest.jsonfeed', {
+            axios.get('https://hnrss.org/newest.jsonfeed', {
                     responseType: 'json'
                 })
                 .then(response => {
