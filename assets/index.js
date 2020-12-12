@@ -15,7 +15,7 @@ document.getElementById('nextBtn').addEventListener('click', () => {
 
 document.getElementById('prev').onclick = () => {
     let hash = window.location.hash.split('#');
-    hash[2] = Number(hash[2]) - 1 || 1;
+    hash[2] = Number(hash[2]) - 1 || 0;
     console.log(hash.join('#'));
     window.location.hash = hash.join('#');
 }
@@ -154,9 +154,11 @@ function toHnlTable(data) {
     // postBtn.hidden = true;
     // contentHn.hidden = true;
     console.log(data.length + "\n" + data);
-    let start = 0 + (Number(window.location.hash.split('#')[2]) || 1);
+    let start = 0 + (Number(window.location.hash.split('#')[2]) || 0);
+    if (start >= 1) start *= 10;
     // let end = 10 + (Number(window.location.hash.split('#')[2]) || 1);
     let end = 10 + start;
+
     console.log("start ", start, " end ", end);
     let data1 = data.slice(start, end);
     let getData = async () => {
