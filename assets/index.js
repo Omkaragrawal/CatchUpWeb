@@ -44,7 +44,7 @@ function loadData(channel) {
     contentHn.innerHTML = "";
     switch (channel) {
         case 'hackernews':
-            axios.get('/hackernews', {
+            axios.get('https://corsenabled.herokuapp.com/get?to=https://hnrss.org/newest.jsonfeed', {
                     responseType: 'json'
                 })
                 .then(response => {
