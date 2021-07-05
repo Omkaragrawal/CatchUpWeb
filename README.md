@@ -31,5 +31,5 @@ This projects aim to be a web supporter of [this app](https://github.com/ZacSwee
 
 
 - index.js file in the assets directory is directly linked to the html file, please ignore the index.js file in home directory.
-- For any doubts/queries contact me on omkar3654@gmail.com or visit [omkaragrawal.codes](https://omkaragrawal.codes)
+- For any doubts/queries contact me on omkar3654@gmail.com or visit [omkaragrawal.dev](https://omkaragrawal.dev)
 - PRs accepted
