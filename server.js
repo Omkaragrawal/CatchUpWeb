@@ -51,7 +51,7 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-app.get('/hackernews', (req, res) => {
+app.get(['/hackernews', 'hackernews/', 'hackernews/new'], (req, res) => {
     axios.get("https://hnrss.org/newest.jsonfeed", {
             responseType: 'json'
         })
@@ -64,8 +64,33 @@ app.get('/hackernews', (req, res) => {
         });
 });
 
-app.get('/hackernewsTop', (req, res) => {
+app.get('/hackernews/top', (req, res) => {
     axios.get("https://hacker-news.firebaseio.com/v0/topstories.json", {
+            responseType: 'json'
+        })
+        .then(resp => {
+            res.send(resp.data);
+        })
+        .catch(err => {
+            console.log(`\n\n ${err} \n\n`);
+            res.status(500).send(err);
+        });
+});
+
+app.get('/hackernews/best', (req, res) => {
+    axios.get("https://hacker-news.firebaseio.com/v0/beststories.json", {
+            responseType: 'json'
+        })
+        .then(resp => {
+            res.send(resp.data);
+        })
+        .catch(err => {
+            console.log(`\n\n ${err} \n\n`);
+            res.status(500).send(err);
+        });
+});
+app.get('/hackernews/jobs', (req, res) => {
+    axios.get("https://hacker-news.firebaseio.com/v0/jobstories.json", {
             responseType: 'json'
         })
         .then(resp => {
@@ -79,6 +104,19 @@ app.get('/hackernewsTop', (req, res) => {
 
 app.get('/hackerearth', (req, res) => {
     axios.get("http://engineering.hackerearth.com/atom.xml", {
+            responseType: 'document'
+        })
+        .then(resp => {
+            res.send(resp.data);
+        })
+        .catch(err => {
+            console.log(`\n\n ${err} \n\n`);
+            res.status(500).send(err);
+        });
+});
+
+app.get('/slashDot', (req, res) => {
+    axios.get("http://rss.slashdot.org/Slashdot/slashdotMain", {
             responseType: 'document'
         })
         .then(resp => {

@@ -45,7 +45,7 @@ function loadData(channel) {
     contentHn.innerHTML = "";
     switch (channel) {
         case 'hackernews':
-            axios.get('https://corsenabled.herokuapp.com/get?to=https://hnrss.org/newest.jsonfeed', {
+            axios.get(window.location.origin + '/hackernews', {
                     responseType: 'json'
                 })
                 .then(response => {
@@ -63,7 +63,7 @@ function loadData(channel) {
             postBtn.hidden = true;
 
             // console.log("hackernewsTOP");
-            axios.get('https://hacker-news.firebaseio.com/v0/topstories.json', {
+            axios.get(window.location.origin + '/hackernews/top', {
                     responseType: 'json'
                 })
                 .then(response => {
@@ -92,7 +92,7 @@ function loadData(channel) {
                 // elem1.crossOrigin = "anonymous";
                 // document.body.appendChild(elem1);
             }
-            axios.get('https://corsenabled.herokuapp.com/get?to=http://rss.slashdot.org/Slashdot/slashdotMain')
+            axios.get(window.location.origin + '/slashdot')
                 .then(feed => parser.parse(feed.data)["rdf:RDF"].item)
                 .then(items => {
                     toSlashdotTable(items);
