@@ -52,6 +52,22 @@ app.get('/', (req, res) => {
 });
 
 app.get(['/hackernews', 'hackernews/', 'hackernews/new'], (req, res) => {
+    if (req.params.q) {
+        axios.get(`https://hnrss.org/newest.jsonfeed?q=${req.params.q}&count=50`, {
+                params: {
+                    q: req.params.q
+                },
+                responseType: 'json'
+            })
+            .then(resp => {
+                res.send(resp.data);
+            })
+            .catch(err => {
+                console.log(`\n\n ${err} \n\n`);
+                res.status(500).send(err);
+            });
+            return;
+    }
     axios.get("https://hnrss.org/newest.jsonfeed", {
             responseType: 'json'
         })
@@ -89,8 +105,38 @@ app.get('/hackernews/best', (req, res) => {
             res.status(500).send(err);
         });
 });
+
 app.get('/hackernews/jobs', (req, res) => {
+    if (req.params.q) {
+        axios.get(`https://hnrss.org/jobs.jsonfeed??q=${req.params.q}&count=50`, {
+                params: {
+                    q: req.params.q
+                },
+                responseType: 'json'
+            })
+            .then(resp => {
+                res.send(resp.data);
+            })
+            .catch(err => {
+                console.log(`\n\n ${err} \n\n`);
+                res.status(500).send(err);
+            });
+            return;
+    }
     axios.get("https://hacker-news.firebaseio.com/v0/jobstories.json", {
+            responseType: 'json'
+        })
+        .then(resp => {
+            res.send(resp.data);
+        })
+        .catch(err => {
+            console.log(`\n\n ${err} \n\n`);
+            res.status(500).send(err);
+        });
+});
+
+app.get('/hackernews/launches', (req, res) => {
+    axios.get("https://hnrss.org/launches.jsonfeed", {
             responseType: 'json'
         })
         .then(resp => {
@@ -115,8 +161,60 @@ app.get('/hackerearth', (req, res) => {
         });
 });
 
-app.get('/slashDot', (req, res) => {
+app.get(['/slashdot', 'slashdot/main'], (req, res) => {
     axios.get("http://rss.slashdot.org/Slashdot/slashdotMain", {
+            responseType: 'document'
+        })
+        .then(resp => {
+            res.send(resp.data);
+        })
+        .catch(err => {
+            console.log(`\n\n ${err} \n\n`);
+            res.status(500).send(err);
+        });
+});
+
+app.get('/slashdot/games', (req, res) => {
+    axios.get("http://rss.slashdot.org/Slashdot/slashdotGames", {
+            responseType: 'document'
+        })
+        .then(resp => {
+            res.send(resp.data);
+        })
+        .catch(err => {
+            console.log(`\n\n ${err} \n\n`);
+            res.status(500).send(err);
+        });
+});
+
+app.get('/slashdot/politics', (req, res) => {
+    axios.get("http://rss.slashdot.org/Slashdot/slashdotPolitics", {
+            responseType: 'document'
+        })
+        .then(resp => {
+            res.send(resp.data);
+        })
+        .catch(err => {
+            console.log(`\n\n ${err} \n\n`);
+            res.status(500).send(err);
+        });
+});
+
+app.get('/slashdot/linux', (req, res) => {
+    axios.get("http://rss.slashdot.org/Slashdot/slashdotLinux", {
+            responseType: 'document'
+        })
+        .then(resp => {
+            res.send(resp.data);
+        })
+        .catch(err => {
+            console.log(`\n\n ${err} \n\n`);
+            res.status(500).send(err);
+        });
+});
+
+app.get('/slashdot/developers', (req, res) => {
+    axios.get("http://rss.slashdot.org/Slashdot/slashdotDevelopers", {
             responseType: 'document'
         })
         .then(resp => {
