@@ -230,7 +230,7 @@ app.get(['/devTo', '/devTo/latest'], (req, res) => {
     if (req.query) {
         let queries = '?state=fresh&';
         if (req.query.page) {
-            queries += `q=${req.query.page}&`;
+            queries += `page=${req.query.page}&`;
         }
         if (req.query.per_page) {
             queries += `per_page=${req.query.per_page}&`;
@@ -271,7 +271,7 @@ app.get('/devTo/trending', (req, res) => {
     if (req.query) {
         let queries = '?state=rising&';
         if (req.query.page) {
-            queries += `q=${req.query.page}&`;
+            queries += `page=${req.query.page}&`;
         }
         if (req.query.per_page) {
             queries += `per_page=${req.query.per_page}&`;
@@ -281,7 +281,8 @@ app.get('/devTo/trending', (req, res) => {
         if (req.query.tags) {
             queries += `tags=${req.query.tags}`;
         }
-        if (queries.endsWith('?')) {
+        queries += queries.trimEnd();
+        if (queries.endsWith('?') || queries.endsWith(',')) {
             queries = queries.substring(0, queries.length - 1);
         }
         axios.get("https://dev.to/api/articles" + queries, {
@@ -327,8 +328,8 @@ app.get(['/devTo/top', '/devTo/top/:days'], (req, res) => {
         } else {
             queries += `top=7`;
         }
-
-        if (queries.endsWith('?')) {
+        queries += queries.trimEnd();
+        if (queries.endsWith('?') || queries.endsWith(',')) {
             queries = queries.substring(0, queries.length - 1);
         }
         console.log(req.query ,queries);
