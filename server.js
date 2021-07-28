@@ -308,7 +308,7 @@ app.get('/devTo/trending', (req, res) => {
         });
 });
 
-app.get('/devTo/top/:days', (req, res) => {
+app.get(['/devTo/top', '/devTo/top/:days'], (req, res) => {
     if (req.query) {
         let queries = '?';
         if (req.query.page) {
