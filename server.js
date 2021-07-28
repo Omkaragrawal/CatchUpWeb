@@ -66,7 +66,7 @@ app.get(['/hackernews', 'hackernews/', 'hackernews/new'], (req, res) => {
                 console.log(`\n\n ${err} \n\n`);
                 res.status(500).send(err);
             });
-            return;
+        return;
     }
     axios.get("https://hnrss.org/newest.jsonfeed", {
             responseType: 'json'
@@ -121,7 +121,7 @@ app.get('/hackernews/jobs', (req, res) => {
                 console.log(`\n\n ${err} \n\n`);
                 res.status(500).send(err);
             });
-            return;
+        return;
     }
     axios.get("https://hacker-news.firebaseio.com/v0/jobstories.json", {
             responseType: 'json'
@@ -216,6 +216,149 @@ app.get('/slashdot/linux', (req, res) => {
 app.get('/slashdot/developers', (req, res) => {
     axios.get("http://rss.slashdot.org/Slashdot/slashdotDevelopers", {
             responseType: 'document'
+        })
+        .then(resp => {
+            res.send(resp.data);
+        })
+        .catch(err => {
+            console.log(`\n\n ${err} \n\n`);
+            res.status(500).send(err);
+        });
+});
+
+app.get(['/devTo', '/devTo/latest'], (req, res) => {
+    if (req.query) {
+        let queries = '?state=fresh&';
+        if (req.query.page) {
+            queries += `q=${req.query.page}&`;
+        }
+        if (req.query.per_page) {
+            queries += `per_page=${req.query.per_page}&`;
+        } else {
+            queries += `per_page=50&`;
+        }
+        if (req.query.tags) {
+            queries += `tags=${req.query.tags}`;
+        }
+        if (queries.endsWith('?')) {
+            queries = queries.substring(0, queries.length - 1);
+        }
+        axios.get("https://dev.to/api/articles" + queries, {
+                responseType: 'json'
+            })
+            .then(resp => {
+                res.send(resp.data);
+            })
+            .catch(err => {
+                console.log(`\n\n ${err} \n\n`);
+                res.status(500).send(err);
+            });
+        return;
+    }
+    axios.get("https://dev.to/api/articles?state=fresh&per_page=50", {
+            responseType: 'json'
+        })
+        .then(resp => {
+            res.send(resp.data);
+        })
+        .catch(err => {
+            console.log(`\n\n ${err} \n\n`);
+            res.status(500).send(err);
+        });
+});
+
+app.get('/devTo/trending', (req, res) => {
+    if (req.query) {
+        let queries = '?state=rising&';
+        if (req.query.page) {
+            queries += `q=${req.query.page}&`;
+        }
+        if (req.query.per_page) {
+            queries += `per_page=${req.query.per_page}&`;
+        } else {
+            queries += `per_page=50&`;
+        }
+        if (req.query.tags) {
+            queries += `tags=${req.query.tags}`;
+        }
+        if (queries.endsWith('?')) {
+            queries = queries.substring(0, queries.length - 1);
+        }
+        axios.get("https://dev.to/api/articles" + queries, {
+                responseType: 'json'
+            })
+            .then(resp => {
+                res.send(resp.data);
+            })
+            .catch(err => {
+                console.log(`\n\n ${err} \n\n`);
+                res.status(500).send(err);
+            });
+        return;
+    }
+    axios.get("https://dev.to/api/articles?state=rising&per_page=50", {
+            responseType: 'json'
+        })
+        .then(resp => {
+            res.send(resp.data);
+        })
+        .catch(err => {
+            console.log(`\n\n ${err} \n\n`);
+            res.status(500).send(err);
+        });
+});
+
+app.get('/devTo/top/:days', (req, res) => {
+    if (req.query) {
+        let queries = '?';
+        if (req.query.page) {
+            queries += `page=${req.query.page}&`;
+        }
+        if (req.query.per_page) {
+            queries += `per_page=${req.query.per_page}&`;
+        } else {
+            queries += `per_page=50&`;
+        }
+        if (req.query.tags) {
+            queries += `tags=${req.query.tags}&`;
+        }
+        if (req.params.days) {
+            queries += `top=${req.params.days}`;
+        } else {
+            queries += `top=7`;
+        }
+
+        if (queries.endsWith('?')) {
+            queries = queries.substring(0, queries.length - 1);
+        }
+        console.log(req.query ,queries);
+        axios.get("https://dev.to/api/articles" + queries, {
+                responseType: 'json'
+            })
+            .then(resp => {
+                res.send(resp.data);
+            })
+            .catch(err => {
+                console.log(`\n\n ${err} \n\n`);
+                res.status(500).send(err);
+            });
+        return;
+    }
+    if (req.params.days) {
+        axios.get("https://dev.to/api/articles?per_page=50&top=" + req.params.days, {
+                responseType: 'json'
+            })
+            .then(resp => {
+                res.send(resp.data);
+            })
+            .catch(err => {
+                console.log(`\n\n ${err} \n\n`);
+                res.status(500).send(err);
+            });
+        return;
+    }
+    axios.get("https://dev.to/api/articles?per_page=50&top=7", {
+            responseType: 'json'
         })
         .then(resp => {
             res.send(resp.data);
