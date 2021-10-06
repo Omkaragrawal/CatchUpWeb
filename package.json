@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/Omkaragrawal/catchupweb#readme",
   "dependencies": {
-    "axios": "^0.21.4",
+    "axios": "^0.22.0",
     "compression": "^1.7.3",
     "express": "^4.16.4",
     "helmet": "^4.6.0",
