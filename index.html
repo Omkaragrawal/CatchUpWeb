@@ -1,65 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; connect-src 'self' https://hacker-news.firebaseio.com https://corsenabled.herokuapp.com  https://*.hackerearth.com;script-src 'self' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com;">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; img-src 'self' data:; connect-src 'self' https://hacker-news.firebaseio.com https://corsenabled.herokuapp.com  https://*.hackerearth.com;script-src 'self' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com;"
+    />
     <title>Catchup Web</title>
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=" crossorigin="anonymous" /> -->
     <!-- <link rel="stylesheet" href="assets/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=" crossorigin="anonymous" />
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY="
+      crossorigin="anonymous"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg float-right navbar-light bg-light rounded">
-            <button class="navbar-toggler collapsed float-right" type="button" data-toggle="collapse"
-                data-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                <!-- ru7100 --samsung -->
-            </button>
+      <nav
+        class="
+          navbar navbar-expand-lg
+          float-right
+          navbar-light
+          bg-light
+          rounded
+        "
+      >
+        <button
+          class="navbar-toggler collapsed float-right"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarsExample10"
+          aria-controls="navbarsExample10"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+          <!-- ru7100 --samsung -->
+        </button>
 
-            <div class="navbar-collapse float-right justify-content-md-center collapse" id="navbarsExample10" >
-                <ul class="navbar-nav">
-                    <li class="nav-item active float-right text-md-center">
-                        <a class="nav-link" href="#hackernews">HACKER NEWS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#slashdot">SLASHDOT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#hackerearth">HACKER EARTH</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <main role="main">
-                <button type="button"  class="btn btn-secondary col-2 float-right" id="btnReload">Reload data</button>
-                <div>&nbsp;</div>
-                <button hidden id="posts" class="btn btn-secondary btn-lg col-sm-12" style="width: 100%; height: 100%;">Show TOP</button>
-                <div class="row align-items-center">
-                <button id="prev" type="button" class="btn btn-outline-primary btn-lg col">Previous</button>
-                <!-- <div class="col-sm-1"></div> -->
-                <button id="nextBtn" type="button" class="btn btn-outline-success btn-lg col">Next</button>
-            </div>
-            <div id="loading" hidden class="row align-items-center">
-                <div class="col"> <h1>... Loading</h1></div>
-            </div>
-            <table class="table-bordered table col-sm-12 col-md-10 col-xl-11" id="contentHn" style="text-align: center">
-            </table>
-        </main>
+        <div
+          class="navbar-collapse float-right justify-content-md-center collapse"
+          id="navbarsExample10"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item active float-right text-md-center">
+              <a class="nav-link" href="#hackernews">HACKER NEWS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#slashdot">SLASHDOT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#hackerearth">HACKER EARTH</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <main role="main">
+        <button
+          type="button"
+          class="btn btn-secondary col-2 float-right"
+          id="btnReload"
+        >
+          Reload data
+        </button>
+        <div>&nbsp;</div>
+        <button
+          hidden
+          id="posts"
+          class="btn btn-secondary btn-lg col-sm-12"
+          style="width: 100%; height: 100%"
+        >
+          Show TOP
+        </button>
+        <div class="row align-items-center">
+          <button
+            id="prev"
+            type="button"
+            class="btn btn-outline-primary btn-lg col"
+          >
+            Previous
+          </button>
+          <!-- <div class="col-sm-1"></div> -->
+          <button
+            id="nextBtn"
+            type="button"
+            class="btn btn-outline-success btn-lg col"
+          >
+            Next
+          </button>
+        </div>
+        <div
+          id="loading"
+          hidden
+          class="w-100 h-100 row align-items-center justify-content-center"
+        >
+          <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+        </div>
+        <table
+          class="table-bordered table col-sm-12 col-md-10 col-xl-11"
+          id="contentHn"
+          style="text-align: center"
+        ></table>
+      </main>
     </div>
 
     <!-- <script src="/index.min.js"></script> -->
-    <script defer async src="https://cdnjs.cloudflare.com/ajax/libs/fast-xml-parser/3.17.1/parser.min.js" integrity="sha256-rdj1KYq6fdIXKQYjbgUE1PNiqpFoSGJlrT7AlPBae/c=" crossorigin="anonymous"></script>
+    <script
+      defer
+      async
+      src="https://cdnjs.cloudflare.com/ajax/libs/fast-xml-parser/3.17.1/parser.min.js"
+      integrity="sha256-rdj1KYq6fdIXKQYjbgUE1PNiqpFoSGJlrT7AlPBae/c="
+      crossorigin="anonymous"
+    ></script>
     <script src="/index.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js" integrity="sha256-mpnrJ5DpEZZkwkE1ZgkEQQJW/46CSEh/STrZKOB/qoM=" crossorigin="anonymous" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha256-CjSoeELFOcH0/uxWu6mC/Vlrc1AARqbm/jiiImDGV3s=" crossorigin="anonymous" defer></script>
-</body>
-
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"
+      integrity="sha256-mpnrJ5DpEZZkwkE1ZgkEQQJW/46CSEh/STrZKOB/qoM="
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"
+      integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha256-CjSoeELFOcH0/uxWu6mC/Vlrc1AARqbm/jiiImDGV3s="
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </body>
 </html>
